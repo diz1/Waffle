@@ -71,7 +71,7 @@
     "gulp-svg-symbol-view": "^1.0.1",
     "gulp-svg2png": "^2.0.2",
     "gulp-to-ico": "^1.0.0",
-    "gulp-webp": "^5.0.0",
+    "gulp-webp": "^4.0.1",
     "husky": "^8.0.3",
     "imagemin-pngquant": "^9.0.2",
     "jstransformer": "^1.0.0",
