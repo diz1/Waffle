@@ -1,7 +1,7 @@
 {
-  "name": "gulp-template",
-  "version": "0.1.13",
-  "description": "Gulp сборка для продуктивной верстки",
+  "name": "waffle",
+  "version": "0.0.1",
+  "description": "waffle-zaim",
   "keywords": [
     "gulp",
     "pug",
@@ -24,13 +24,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eliofery/gulp-template.git"
+    "url": "git+https://github.com/diz1/Waffle.git"
   },
   "bugs": {
-    "url": "https://github.com/eliofery/gulp-template/issues"
+    "url": "https://github.com/diz1/Waffle/issues"
   },
-  "homepage": "https://github.com/eliofery/gulp-template#readme",
-  "author": "Sergio Eliofery",
+  "homepage": "https://github.com/diz1/Waffle",
+  "author": "Dmitriy Smirnov",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.22.9",
@@ -71,7 +71,7 @@
     "gulp-svg-symbol-view": "^1.0.1",
     "gulp-svg2png": "^2.0.2",
     "gulp-to-ico": "^1.0.0",
-    "gulp-webp": "^4.0.1",
+    "gulp-webp": "^5.0.0",
     "husky": "^8.0.3",
     "imagemin-pngquant": "^9.0.2",
     "jstransformer": "^1.0.0",
