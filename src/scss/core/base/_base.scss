@@ -4,11 +4,13 @@
 *::before,
 *::after {
   box-sizing: inherit;
+
+  line-height: normal;
 }
 
 html,
 body {
-  height: 100vh;
+  height: 100dvh;
 }
 
 html {
@@ -21,7 +23,7 @@ body {
   min-width: $min-screen;
   margin: 0;
 
-  color: rgb(var(--color-black));
+  color: var(--color-black);
   font-size: $fz;
   font-family: $font-primary;
   line-height: $lh;
@@ -29,7 +31,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: rgb(var(--color-white));
+  background-color: var(--color-white);
 }
 
 img {
@@ -41,12 +43,20 @@ button {
   @include button;
 }
 
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 // h1 ... h6
 @each $headline, $size in $headlines {
   $margin: $size * $lh;
 
   #{$headline} {
-    margin: $margin 0 math.div($margin, 2);
+    //margin: $margin 0 math.div($margin, 2);
+    margin: 0;
+    padding: 0;
 
     font-weight: 500;
     font-size: $size;
@@ -60,4 +70,47 @@ b {
 
 .sr-only {
   @include sr-only;
+}
+
+
+@include from(xs) {
+  .test {
+    font-size: 1px;
+  }
+}
+
+@include from(sm) {
+  .test {
+    font-size: 1px;
+  }
+}
+
+@include from(md) {
+  .test {
+    font-size: 1px;
+  }
+}
+
+@include from(lg) {
+  .test {
+    font-size: 1px;
+  }
+}
+
+@include from(xl) {
+  .test {
+    font-size: 1px;
+  }
+}
+
+@include from(xxl) {
+  .test {
+    font-size: 1px;
+  }
+}
+
+@include from(xxxl) {
+  .test {
+    font-size: 1px;
+  }
 }

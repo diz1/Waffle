@@ -1,0 +1,13 @@
+mixin button(tag='button', type='default', isIcon)
+  if isIcon
+    #{tag}.button(class="button--" + type + " button--iconic")&attributes(attributes)
+      if block
+        block
+      else
+        span Текст
+  else
+    #{tag}.button(class="button--" + type)&attributes(attributes)
+      if block
+        block
+      else
+        span Текст

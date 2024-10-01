@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "title": "Как получить",
+      "link": "#how-to-get"
+    },
+    {
+      "title": "Как вернуть",
+      "link": "#how-to-return"
+    },
+    {
+      "title": "Отписаться от услуг",
+      "link": "/unsubscribe.html"
+    }
+  ]
+}

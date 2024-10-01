@@ -1,0 +1,71 @@
+@include from(xs) {
+  .button {
+    @include button-reset;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: fit-content;
+
+    padding: 10px 8px;
+
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 8px;
+
+    font-family: $font-secondary;
+    line-height: normal;
+
+    border-radius: 10px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    &.button--default,
+    &.button--accent,
+    &.button--accent-orange {
+      color: var(--color-white);
+
+      svg {
+        fill: var(--color-white);
+      }
+    }
+
+    &.button--default {
+      background-color: var(--color-black);
+    }
+
+    &.button--accent {
+      background-color: var(--color-accent-green);
+    }
+
+    &.button--accent-orange {
+      background-color: var(--color-accent-orange);
+    }
+
+    &.button--white {
+      color: var(--color-black);
+
+      background-color: var(--color-white);
+
+      svg {
+        fill: var(--color-accent-green);
+      }
+    }
+
+    &.button--iconic {
+      padding: 8px;
+
+      border-radius: 54px;
+    }
+  }
+}
+
+@include from(lg) {
+  .button {
+    border-radius: 14px;
+  }
+}

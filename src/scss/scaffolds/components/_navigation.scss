@@ -1,0 +1,32 @@
+@include from(xs) {
+  .nav {
+    &__list {
+
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      padding: 0;
+
+      list-style: none;
+
+      &.nav__list--mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        align-items: center;
+
+        .nav__item {
+          font-weight: 500;
+          font-size: 12px;
+
+          font-family: $font-secondary;
+        }
+      }
+    }
+
+    &__item {
+      color: var(--color-black-1);
+      font-weight: 700;
+    }
+  }
+}

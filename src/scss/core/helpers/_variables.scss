@@ -1,20 +1,26 @@
 // @link https://rolle.design/native-css-variables-vs-scss-variables
-$black: #222;
+$black: #403836;
+$black-1: #857E79;
 $white: #fff;
-$accent: #cbcbcb;
+$accent-green: #759C5C;
+$accent-orange: #C38D76;
 
 :root {
-  --color-black: #{hextorgb($black)};
-  --color-white: #{hextorgb($white)};
+  --color-black: rgb(#{hextorgb($black)});
+  --color-black-1: rgb(#{hextorgb($black-1)});
+  --color-white: rgb(#{hextorgb($white)});
 
-  --color-accent: #{hextorgb($accent)};
+  --color-accent-green: rgb(#{hextorgb($accent-green)});
+  --color-accent-orange: rgb(#{hextorgb($accent-orange)});
 }
 
 @mixin dark-mode {
-  --color-black: #{hextorgb($white)};
-  --color-white: #{hextorgb($black)};
+  --color-black: rgb(#{hextorgb($white)});
+  --color-black-1: rgb(#{hextorgb($white)});
+  --color-white: rgb(#{hextorgb($black)});
 
-  --color-accent: #{hextorgb($accent)};
+  --color-accent-green: rgb(#{hextorgb($accent-green)});
+  --color-accent-orange: rgb(#{hextorgb($accent-orange)});
 }
 
 .dark-mode {
@@ -28,6 +34,7 @@ $accent: #cbcbcb;
 }
 
 $font-primary: Roboto, -apple-system, Arial, sans-serif;
+$font-secondary: Montserrat, -apple-system, Arial, sans-serif;
 
 $fz: 16px;
 $lh: 1.5;
@@ -50,7 +57,15 @@ $headlines: (
 );
 
 $min-screen: 320px;
-$container-sizes: (sm: 768px, md: 1024px, lg: 1536px);
-$container-grid: 20px;
+$container-sizes: (
+  xs: $min-screen,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px,
+  xxl: 1440px,
+  xxxl: 1790px,
+);
+$container-grid: 15px;
 
 $transition: all 0.3s ease;

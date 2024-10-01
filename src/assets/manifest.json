@@ -9,8 +9,8 @@
   "scope": "/",
   "display": "minimal-ui",
   "orientation": "any",
-  "theme_color": "#000",
-  "background_color": "#000",
+  "theme_color": "#C38D76",
+  "background_color": "#C38D76",
   "prefer_related_applications": false,
   "icons": [
     {

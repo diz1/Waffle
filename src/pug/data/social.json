@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "icon": "telegram",
+      "link": "https://t.me/waffle"
+    },
+    {
+      "icon": "account",
+      "link": "#register"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+@include from(xs) {
+  .header {
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 54px;
+    }
+
+    &__left, &__center,
+    &__right {
+      display: flex;
+      align-items: center;
+    }
+
+    &__left {
+      gap: 8px;
+    }
+
+    &__center {
+      gap: 70px;
+      justify-content: space-between;
+    }
+
+    &__right {
+      gap: 8px;
+      justify-content: end;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__links {
+      display: none;
+    }
+
+    &__link {
+      font-weight: 700;
+    }
+
+    &__social,
+    &__social-mobile {
+      margin-left: auto;
+    }
+
+    &__social {
+      .social__item:first-child {
+        display: none;
+      }
+    }
+  }
+
+  body.menu-open .header {
+    &__burger {
+      &-open {
+        display: none;
+      }
+
+      &-close {
+        display: block;
+      }
+    }
+
+    &__social {
+      display: none;
+    }
+
+    &__social-mobile {
+      display: flex;
+    }
+
+    &__create {
+      display: none;
+    }
+  }
+
+  body:not(.menu-open) .header {
+    &__burger {
+      &-open {
+        display: block;
+      }
+
+      &-close {
+        display: none;
+      }
+    }
+
+    &__social-mobile {
+      display: none;
+    }
+  }
+}
+
+@include from(lg) {
+  .header {
+    &__create {
+      padding: 14px 16px;
+
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    &__social {
+      svg {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+}
+
+@include from(xxl) {
+  .header {
+    &__wrapper {
+      min-height: 92px;
+    }
+
+    &__right {
+      gap: 40px;
+    }
+
+    &__nav {
+      display: flex;
+    }
+
+    &__burger {
+      display: none;
+    }
+
+    &__links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    &__link:last-child {
+      padding-left: 20px;
+
+      border-left: 1px solid transparentize($accent-green, 0.52);
+    }
+
+    &__social {
+      .social__item:first-child {
+        display: block;
+      }
+    }
+  }
+}
+
+@include from(xxxl) {
+  .header {
+    &__center {
+      gap: 140px;
+    }
+  }
+}

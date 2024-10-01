@@ -1,0 +1,87 @@
+@include from(xs) {
+  .mobile-menu {
+    position: absolute;
+    right: 0;
+
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    min-height: calc(100dvh - 54px);
+
+    color: var(--color-black-1);
+
+    background: var(--color-black);
+
+    &__title {
+
+      color: var(--color-white);
+      font-weight: 500;
+      font-size: 18px;
+      font-style: italic;
+      line-height: normal;
+      text-align: center;
+    }
+
+    &__nav {}
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+
+      gap: 10px;
+      align-items: center;
+    }
+
+    &__link {
+      &.mobile-menu__link--phone {
+        color: var(--color-white);
+        font-weight: 700;
+        font-size: 14px;
+      }
+
+      &.mobile-menu__link--email {
+        font-weight: 500;
+        font-size: 12px;
+      }
+    }
+
+    &__button {
+      min-width: 100%;
+      margin-top: auto;
+
+      padding: 14px 0;
+
+      font-size: 12px;
+    }
+  }
+
+  body.menu-open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+    padding: 32px 16px 22px;
+
+    &__div {
+      align-self: stretch;
+      height: 2px;
+
+      margin: 0;
+
+      background: #514745;
+      border: none;
+      border-radius: 20px;
+      opacity: .5;
+    }
+  }
+}
+
+@include from(xxl) {
+  body.menu-open .mobile-menu,
+  .mobile-menu {
+    display: none;
+  }
+}

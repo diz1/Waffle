@@ -1,0 +1,12 @@
+mixin navigation(isMobileMenu)
+  nav.nav&attributes(attributes)
+    if !isMobileMenu
+      ul.nav__list
+        for item in jsonData.nav.items
+          li.nav__item
+            a.nav__link(href=item.link) #{ item.title }
+    else
+      ul.nav__list.nav__list--mobile
+        for item in jsonData.nav.items
+          li.nav__item
+            a.nav__link(href=item.link) #{ item.title }

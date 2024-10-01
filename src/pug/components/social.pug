@@ -1,0 +1,9 @@
+mixin social(isMobile)
+  .social&attributes(attributes)
+    for item in jsonData.social.items
+      if(isMobile)
+        +button('a', 'accent', true).social__item(href=item.link)
+          +icon(item.icon).social__icon(width="16", height="16")
+      else
+        +button('a', 'white', true).social__item(href=item.link)
+          +icon(item.icon).social__icon(width="16", height="16")

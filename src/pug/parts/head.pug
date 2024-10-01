@@ -28,7 +28,14 @@ noscript
   link(rel="stylesheet", href="css/main.css?v=" + siteVersion)
 
 //- Шрифты
-link(rel="preload", as="font", href="fonts/roboto/roboto-regular.woff2", type="font/woff2", crossorigin="anonymous")
+link(rel="preload", as="font", href="fonts/roboto/Roboto-Regular.woff2", type="font/woff2", crossorigin="anonymous")
+link(rel="preload", as="font", href="fonts/roboto/Roboto-Medium.woff2", type="font/woff2", crossorigin="anonymous")
+link(rel="preload", as="font", href="fonts/roboto/Roboto-MediumItalic.woff2", type="font/woff2", crossorigin="anonymous")
+link(rel="preload", as="font", href="fonts/roboto/Roboto-Bold.woff2", type="font/woff2", crossorigin="anonymous")
+link(rel="preload", as="font", href="fonts/montserrat/Montserrat-Regular.woff2", type="font/woff2", crossorigin="anonymous")
+link(rel="preload", as="font", href="fonts/montserrat/Montserrat-Medium.woff2", type="font/woff2", crossorigin="anonymous")
+link(rel="preload", as="font", href="fonts/montserrat/Montserrat-MediumItalic.woff2", type="font/woff2", crossorigin="anonymous")
+link(rel="preload", as="font", href="fonts/montserrat/Montserrat-Bold.woff2", type="font/woff2", crossorigin="anonymous")
 
 //- Мета
 link(rel="canonical", href=siteUrl)
@@ -80,21 +87,21 @@ link(rel="icon", href="img/icon.svg", type="image/svg+xml")
 link(rel="apple-touch-icon", href="img/apple-touch-icon.png")
 link(rel="manifest", href="manifest.json")
 
-if (env === "prod")
+//if (env === "prod")
   //- Google Analytics
-  script.
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','#{google}');
+  //script.
+  //  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  //          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  //      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  //      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  //  })(window,document,'script','dataLayer','#{google}');
 
   //- Yandex Metrika
-  script.
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-    ym(#{yandex}, "init", {});
+  //script.
+  //  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  //      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  //  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  //  ym(#{yandex}, "init", {});
 
 //- RSS
 //- link(rel="alternate", type="application/atom+xml", href="feed.xml", title=siteDescription)

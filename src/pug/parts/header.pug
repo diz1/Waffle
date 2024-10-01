@@ -1,1 +1,21 @@
-header.main-header
+header.header
+  .container
+    .header__wrapper
+      .header__left
+        +button('button', 'accent-orange', true).burger.header__burger
+          +icon('menu-open').header__burger-open(width="16")(height="16")
+          +icon('menu-close').header__burger-close(width="16")(height="16")
+        +logo().header__logo
+
+      .header__center
+        +navigation().header__nav
+        .header__links
+          a.header__link(href="tel:+79991234567") +8 (000) 000-00-00
+          a.header__link(href="mailto:waffle@gmail.com") waffle@gmail.com
+
+      .header__right
+        +social().header__social
+        +social(true).header__social-mobile
+        +button('a').header__create(href="#") Оформить заявку
+
+    +mobile-menu().header__mobile-menu

@@ -5,7 +5,7 @@
  */
 
 const srcPath = 'src' // ресурсы для разработки проекта
-const buildPath = 'build' // готовый продакшен проект
+const buildPath = 'build' // готовый продакшн проект
 
 const config = {
   // Файлы в которых производится замена текста
@@ -29,11 +29,11 @@ const config = {
     },
     title: {
       old: 'Название проекта',
-      new: 'Вафля займ',
+      new: 'Woffle',
     },
     desc: {
       old: 'Описание проекта',
-      new: 'Вафля займ',
+      new: 'Woffle',
     },
     // версия проекта, используется для сброса кеша стилей и скриптов
     version: {
@@ -43,7 +43,7 @@ const config = {
     // акцентный цвет проекта
     color: {
       old: '#000',
-      new: '#000',
+      new: '#C38D76',
     },
     // google analytics
     google: {

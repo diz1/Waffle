@@ -1,0 +1,44 @@
+@include from(xs) {
+  .logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    color: var(--color-accent-green);
+    line-height: normal;
+
+    &__title {
+      color: var(--color-accent-green);
+      font-weight: 700;
+      font-size: 22px;
+      font-family: $font-secondary;
+    }
+
+    &__desc {
+      display: none;
+      max-width: 159px;
+      padding-left: 20px;
+
+      font-weight: 500;
+
+      font-size: 10px;
+      font-style: italic;
+
+      border-left: 2px solid transparentize($accent-green, 0.52);
+    }
+  }
+}
+
+@include from(xxl) {
+  .logo {
+
+    &__title {
+    }
+
+    &__desc {
+      display: block;
+
+      font-size: 16px;
+    }
+  }
+}

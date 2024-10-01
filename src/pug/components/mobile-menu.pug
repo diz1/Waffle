@@ -1,0 +1,9 @@
+mixin mobile-menu()
+  .mobile-menu&attributes(attributes)
+    span.mobile-menu__title Займы на вкусных <br> условиях!
+    +navigation(true).mobile-menu__nav
+    hr.mobile-menu__div
+    .mobile-menu__links
+      a.mobile-menu__link.mobile-menu__link--phone(href="tel:+79991234567") +8 (000) 000-00-00
+      a.mobile-menu__link.mobile-menu__link--email(href="mailto:waffle@gmail.com") waffle@gmail.com
+    +button('a', 'white').mobile-menu__button Оформить заявку

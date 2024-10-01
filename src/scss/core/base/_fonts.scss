@@ -9,5 +9,11 @@
 // 700 – Bold.
 // 800 – Extra Bold (Ultra Bold)
 
-@include font-face("Roboto", "../fonts/roboto/roboto-regular");
-@include font-face("Roboto", "../fonts/roboto/roboto-medium", 500);
+@include font-face("Roboto", "../fonts/roboto/Roboto-Regular");
+@include font-face("Roboto", "../fonts/roboto/Roboto-Medium", 500);
+@include font-face("Roboto", "../fonts/roboto/Roboto-MediumItalic", 500, italic);
+@include font-face("Roboto", "../fonts/roboto/Roboto-Bold", 700);
+@include font-face("Montserrat", "../fonts/montserrat/Montserrat-Regular");
+@include font-face("Montserrat", "../fonts/montserrat/Montserrat-Medium", 500);
+@include font-face("Montserrat", "../fonts/montserrat/Montserrat-MediumItalic", 500, italic);
+@include font-face("Montserrat", "../fonts/montserrat/Montserrat-Bold", 700);
