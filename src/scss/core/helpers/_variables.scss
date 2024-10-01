@@ -27,11 +27,11 @@ $accent-orange: #C38D76;
   @include dark-mode;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    @include dark-mode;
-  }
-}
+//@media (prefers-color-scheme: dark) {
+//  :root {
+//    @include dark-mode;
+//  }
+//}
 
 $font-primary: Roboto, -apple-system, Arial, sans-serif;
 $font-secondary: Montserrat, -apple-system, Arial, sans-serif;
