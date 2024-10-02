@@ -13,6 +13,10 @@ body {
   height: 100dvh;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 html {
   box-sizing: border-box;
 }
