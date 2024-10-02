@@ -4,5 +4,9 @@
 
 @import "core/base/fonts";
 
+@import "normalize.css/normalize";
+@import "slick-carousel/slick/slick";
+@import "slick-carousel/slick/slick-theme";
+
 @import "scaffolds/components/**/*";
 @import "scaffolds/sections/**/*";

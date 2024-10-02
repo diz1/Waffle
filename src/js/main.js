@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import '../libs/slick-carousel/slick.min'
+import 'slick-carousel/slick/slick.min'
 
 document.addEventListener('DOMContentLoaded', () => {
   // Burger
