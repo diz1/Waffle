@@ -2,7 +2,8 @@
 @import "core/helpers/variables";
 @import "core/helpers/mixins";
 
-@import "node_modules/normalize.css/normalize";
+@import "normalize.css";
+@import url("../../node_modules/slick-carousel/slick/slick.css");
 
 @import "core/base/base";
 @import "core/base/container";

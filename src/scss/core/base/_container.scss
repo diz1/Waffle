@@ -5,6 +5,10 @@
   max-width: map.get($container-sizes, xxxl);
   margin: 0 auto;
   padding: 0 $container-grid;
+
+  &.container--sm {
+    max-width: 1380px;
+  }
 }
 
 @include from(sm) {
