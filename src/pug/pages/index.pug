@@ -44,68 +44,74 @@ block content
 
           .benefits-tabs__content
             .benefits-tabs__card.benefits-tabs-card.benefits-tabs-card--active(data-tab="1")
-              .benefits-tabs-card__items
-                .benefits-tabs-card__item.benefits-tabs-card-item
-                  .benefits-tabs-card-item__icon(data-item="1")
-                    +icon('pencil')(width="28", height="28")
-                  h3.benefits-tabs-card-item__title Оформляете заявку
-                  span.benefits-tabs-card-item__text Нужен только паспорт
-
-                .benefits-tabs-card__div
-                  +icon('div')(width="3", height="48")
-                  +icon('div-h')(width="342", height="3")
-
-                .benefits-tabs-card__item.benefits-tabs-card-item
-                  .benefits-tabs-card-item__icon(data-item="2")
-                    +icon('search')(width="28", height="28")
-                  h3.benefits-tabs-card-item__title Дожидаетесь анализа
-                  span.benefits-tabs-card-item__text Не дольше 5 минут
-
-                .benefits-tabs-card__div
-                  +icon('div')(width="3", height="48")
-                  +icon('div-h')(width="342", height="3")
-
-                .benefits-tabs-card__item.benefits-tabs-card-item
-                  .benefits-tabs-card-item__icon(data-item="3")
-                    +icon('db')(width="28", height="28")
-                  h3.benefits-tabs-card-item__title Выбираете условия
-                  span.benefits-tabs-card-item__text Получаете деньги*
-
-              .benefits-tabs-card__text Приготовьте паспорт и освободите 10&nbsp;минут своего времени
-
-              .benefits-tabs-card__button
-                +button('a')(href="#") Получить сейчас
+              .benefits-tabs-card__wrapper
+                .benefits-tabs-card__items
+                  .benefits-tabs-card__item.benefits-tabs-card-item
+                    .benefits-tabs-card-item__icon(data-item="1")
+                      +icon('pencil')(width="28", height="28")
+                    h3.benefits-tabs-card-item__title Оформляете заявку
+                    span.benefits-tabs-card-item__text Нужен только паспорт
+  
+                  .benefits-tabs-card__div
+                    +icon('div')(width="3", height="48")
+                    +icon('div-h')(width="342", height="3")
+  
+                  .benefits-tabs-card__item.benefits-tabs-card-item
+                    .benefits-tabs-card-item__icon(data-item="2")
+                      +icon('search')(width="28", height="28")
+                    h3.benefits-tabs-card-item__title Дожидаетесь анализа
+                    span.benefits-tabs-card-item__text Не дольше 5 минут
+  
+                  .benefits-tabs-card__div
+                    +icon('div')(width="3", height="48")
+                    +icon('div-h')(width="342", height="3")
+  
+                  .benefits-tabs-card__item.benefits-tabs-card-item
+                    .benefits-tabs-card-item__icon(data-item="3")
+                      +icon('db')(width="28", height="28")
+                    h3.benefits-tabs-card-item__title Выбираете условия
+                    span.benefits-tabs-card-item__text Получаете деньги*
+  
+                .benefits-tabs-card__text Приготовьте паспорт и освободите 10&nbsp;минут своего времени
+  
+                .benefits-tabs-card__button
+                  +button('a')(href="#") Получить сейчас
 
             .benefits-tabs__card.benefits-tabs-card(data-tab="2")
-              .benefits-tabs-card__items
-                .benefits-tabs-card__item.benefits-tabs-card-item
-                  .benefits-tabs-card-item__icon(data-item="1")
-                    +icon('pencil')(width="28", height="28")
-                  h3.benefits-tabs-card-item__title Оформляете заявку
-                  span.benefits-tabs-card-item__text Нужен только паспорт
+              .benefits-tabs-card__wrapper
+                .benefits-tabs-card__items
+                  .benefits-tabs-card__item.benefits-tabs-card-item
+                    .benefits-tabs-card-item__icon(data-item="1")
+                      +icon('pencil')(width="28", height="28")
+                    h3.benefits-tabs-card-item__title В личных кабинетах
+                    span.benefits-tabs-card-item__text Картами VISA, MasterCard, Мир
+  
+                  .benefits-tabs-card__div
+                    +icon('div')(width="3", height="48")
+                    +icon('div-h')(width="342", height="3")
+  
+                  .benefits-tabs-card__item.benefits-tabs-card-item
+                    .benefits-tabs-card-item__icon(data-item="2")
+                      +icon('search')(width="28", height="28")
+                    h3.benefits-tabs-card-item__title Банковский перевод
+                    span.benefits-tabs-card-item__text Из любого удобного банка
+  
+                  .benefits-tabs-card__div
+                    +icon('div')(width="3", height="48")
+                    +icon('div-h')(width="342", height="3")
+  
+                  .benefits-tabs-card__item.benefits-tabs-card-item
+                    .benefits-tabs-card-item__icon(data-item="3")
+                      +icon('db')(width="28", height="28")
+                    h3.benefits-tabs-card-item__title В пунктах обслуживания
+                    span.benefits-tabs-card-item__text Оплачивая через терминалы
+  
+                .benefits-tabs-card__text Вы можете вернуть деньги любым удобным способом: от банковского перевода до оплаты картой.
+  
+                .benefits-tabs-card__button
+                  +button('a')(href="#") Получить сейчас
 
-                .benefits-tabs-card__div
-                  +icon('div')(width="3", height="48")
-
-                .benefits-tabs-card__item.benefits-tabs-card-item
-                  .benefits-tabs-card-item__icon(data-item="2")
-                    +icon('search')(width="28", height="28")
-                  h3.benefits-tabs-card-item__title Дожидаетесь анализа
-                  span.benefits-tabs-card-item__text Не дольше 5 минут
-
-                .benefits-tabs-card__div
-                  +icon('div')(width="3", height="48")
-
-                .benefits-tabs-card__item.benefits-tabs-card-item
-                  .benefits-tabs-card-item__icon(data-item="3")
-                    +icon('db')(width="28", height="28")
-                  h3.benefits-tabs-card-item__title Выбираете условия
-                  span.benefits-tabs-card-item__text Получаете деньги*
-
-              .benefits-tabs-card__text Приготовьте паспорт и освободите 10&nbsp;минут своего времени
-
-              .benefits-tabs-card__button
-                +button('a')(href="#") Получить сейчас
+              span.benefits-tabs-card__desc Условия возврата могут отличаться в зависимости от выбранной вами микрофинансовой компании
 
         .benefits__slider.benefits-slider
           .benefits-slider__item

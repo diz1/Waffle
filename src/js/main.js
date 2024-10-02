@@ -1,8 +1,5 @@
 import $ from 'jquery'
 import '../libs/slick-carousel/slick.min'
-import 'normalize.css'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
 
 document.addEventListener('DOMContentLoaded', () => {
   // Burger
@@ -80,7 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
         button.classList.add('benefits-tabs__button--active')
       }
     })
-
     ;[...tabsCards].forEach(card => {
       card.classList.remove('benefits-tabs-card--active')
 
