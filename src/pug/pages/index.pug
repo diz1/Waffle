@@ -32,7 +32,6 @@ block content
 
         +button('a').intro__button(href="#") Оформить заявку
 
-
   section.section.benefits
     .container.container--sm
       .benefits__wrapper
@@ -129,6 +128,7 @@ block content
           .benefits-slider__item
             h3.benefits-slider__title Удобное погашение
             span.benefits-slider__desc С нами вы гасите займ без комиссии
+
   section.section.requirements
     .container.container--sm
       .requirements__wrapper
@@ -222,6 +222,7 @@ block content
               .requirements-item__col
                 h3.requirements-item__title Мобильный телефон
                 span.requirements-item__desc Jorem ipsum dolor sit amet, consectetur 
+
   section.section.docs
     .container.container--sm
       .docs__wrapper
@@ -269,3 +270,19 @@ block content
               .docs-contacts__col
                   span.docs-contacts__desc Банк России:
                   a.docs-contacts__link(href="https://cbr.ru") https://cbr.ru
+
+  section.section.ways
+    .container.container--sm
+      .ways__wrapper
+        h2.ways__title Способы получения
+        span.ways__desc Мгновенно. Круглосуточно. На&nbsp;любой&nbsp;счет.
+
+        .ways__cards
+          .ways__card
+            +icon('mastercard')(width="80", height="34")
+          .ways__card
+            +icon('visa')(width="80", height="34")
+          .ways__card
+            +icon('mir')(width="80", height="34")
+
+        +button('a').ways__button Оформить заявку

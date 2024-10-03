@@ -1,0 +1,88 @@
+@include from(xs) {
+  .ways {
+    padding-bottom: 80px;
+
+    // .ways__wrapper
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+    }
+
+    // .ways__title
+    &__title {
+      font-weight: 700;
+      font-size: 22px;
+      font-family: $font-secondary;
+      text-align: center;
+    }
+
+    // .ways__desc
+    &__desc {
+      color: var(--color-black-1);
+      font-size: 15px;
+      text-align: center;
+    }
+
+    // .ways__cards
+    &__cards {
+      display: flex;
+      gap: 22px;
+    }
+
+    // .ways__card
+    &__card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    // .ways__button
+    &__button {
+      padding: 14px 26px;
+
+      font-size: 12px;
+    }
+  }
+}
+
+@include from(md) {
+  .ways {
+    &__wrapper {
+      gap: 22px;
+    }
+
+    &__title {
+      font-size: 44px;
+    }
+
+    &__desc {
+      font-size: 20px;
+      line-height: 1.1;
+    }
+
+    &__cards {
+      gap: 120px;
+    }
+
+    &__card {
+      .icon {
+        width: 140px;
+        height: 48px;
+      }
+    }
+
+    &__button {
+      padding: 26px 40px;
+
+      font-size: 18px;
+    }
+  }
+}
+
+@include from(lg) {
+  .ways {
+    padding-bottom: 140px;
+  }
+}
