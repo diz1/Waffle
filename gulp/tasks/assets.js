@@ -29,7 +29,7 @@ const fontsBuild = () =>
 // Переносит в build/img
 const imageBuild = () =>
   src([`${config.src.libs}/slick-carousel/ajax-loader.gif`]).pipe(
-    dest(`${config.build.images}`),
+    dest(`${config.build.css}`),
   )
 
 // Переносит содержимое из библиотек node_modules в src/assets/libs
