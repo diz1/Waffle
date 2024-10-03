@@ -78,6 +78,10 @@ b {
 
 
 @include from(xs) {
+  .section {
+    padding-block: 20px;
+  }
+
   .test {
     font-size: 1px;
   }
@@ -96,6 +100,10 @@ b {
 }
 
 @include from(lg) {
+  .section {
+    padding-block: 50px;
+  }
+
   .test {
     font-size: 1px;
   }

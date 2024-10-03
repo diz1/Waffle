@@ -1,0 +1,199 @@
+@include from(xs) {
+  .docs {
+    // .docs__wrapper
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      padding: 22px 16px;
+
+      background: #F9F9F9;
+      border: 2px solid #E9E9E9;
+
+      border-radius: 22px;
+    }
+
+    // .docs__info
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    // .docs__top
+    &__top {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    // .docs__title
+    &__title {
+
+      order: 1;
+
+      color: var(--color-black);
+      font-weight: 700;
+      font-size: 16px;
+      font-family: $font-secondary
+    }
+
+    // .docs__icon
+    &__icon {
+      order: 2;
+    }
+
+    // .docs__text
+    &__text {
+      color: var(--color-black-1);
+      font-size: 14px;
+
+      strong {
+        color: var(--color-accent-green);
+      }
+    }
+
+    // .docs__contacts
+    &__contacts {
+    }
+  }
+
+  .docs-contacts {
+
+    // .docs-contacts__line
+    &__line {
+      height: 2px;
+      margin: 0 0 22px;
+
+      background: #E9E9E9;
+      border: none;
+    }
+
+    // .docs-contacts__items
+    &__items {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    // .docs-contacts__row
+    &__row {
+      display: flex;
+      gap: 6px;
+    }
+
+    // .docs-contacts__col
+    &__col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+
+      font-size: 14px;
+    }
+
+    // .docs-contacts__icon
+    &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 20px;
+      height: 20px;
+
+      background: var(--color-accent-orange);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+
+      border-radius: 57px;
+    }
+
+    // .docs-contacts__desc
+    &__desc {
+      color: var(--color-black-1);
+    }
+
+    // .docs-contacts__link
+    &__link {
+      color: var(--color-accent-green);
+      font-weight: 700;
+    }
+  }
+}
+
+@include from(sm) {
+  .docs {
+    &__info {
+      gap: 12px;
+    }
+
+    &__top {
+      gap: 20px;
+      justify-content: start;
+    }
+
+    &__icon {
+      order: 1;
+
+      .icon {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    &__title {
+      order: 2;
+
+      font-size: 22px;
+    }
+
+    &__text {
+      font-size: 16px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .docs-contacts {
+    &__row {
+      gap: 8px;
+    }
+
+    &__col {
+      gap: 12px;
+
+      font-size: 16px;
+    }
+
+    &__icon {
+      width: 26px;
+      height: 26px;
+
+      .icon {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}
+
+@include from(lg) {
+  .docs {
+    &__wrapper {
+      padding: 34px 32px;
+    }
+
+    &__text {
+      padding-left: 70px;
+    }
+  }
+
+  .docs-contacts {
+    padding-left: 70px;
+
+    &__items {
+      flex-direction: row;
+      gap: 80px;
+    }
+  }
+}

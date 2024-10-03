@@ -6,7 +6,6 @@
       flex-direction: column;
       gap: 16px;
       align-items: center;
-      padding-block: 40px;
     }
 
     // .benefits__title
@@ -340,12 +339,6 @@
 }
 
 @include from(sm) {
-  .benefits {
-    &__wrapper {
-      padding-block: 100px;
-    }
-  }
-
   .benefits-tabs-card {
     &__button {
       max-width: 248px;

@@ -9,6 +9,8 @@ block content
   section.section.intro
     .container
       .intro__wrapper
+        +picture("/img/intro-bg.png", "/img/intro-bg-desktop.png", "/img/intro-bg-desktop.png").intro__bg
+
         .intro__info
           h1.intro__title Первый&nbsp;заём без&nbsp;процентов
           span.intro__desc Оформи уже сегодня!
@@ -29,6 +31,7 @@ block content
           span.calc__desc Гарантируем повышенное одобрение до 31.12.2024
 
         +button('a').intro__button(href="#") Оформить заявку
+
 
   section.section.benefits
     .container.container--sm
@@ -219,3 +222,50 @@ block content
               .requirements-item__col
                 h3.requirements-item__title Мобильный телефон
                 span.requirements-item__desc Jorem ipsum dolor sit amet, consectetur 
+  section.section.docs
+    .container.container--sm
+      .docs__wrapper
+        .docs__info
+          .docs__top
+            .docs__icon
+              +icon('rkn')(width="38", height="38")
+            h2.docs__title Номер свидетельства №1227400043749 от 08.11.2022
+
+          span.docs__text
+            strong
+              a(href="/") Woffle.ru 
+            | зарегистрирован в реестре РКН, как оператор персональных данных 
+          span.docs__text Регистрационный. номер: 
+            br
+            strong 78-21-008269
+
+        .docs__contacts.docs-contacts
+          hr.docs-contacts__line
+
+          .docs-contacts__items
+            .docs-contacts__row
+              .docs-contacts__col
+                .docs-contacts__icon
+                  +icon('phone-fill')(width="8", height="8")
+
+              .docs-contacts__col
+                  span.docs-contacts__desc Интернет-приёмная Банка России:
+                  a.docs-contacts__link(href="https://www.cbr.ru/reception") https://www.cbr.ru/reception
+
+            .docs-contacts__row
+              .docs-contacts__col
+                .docs-contacts__icon
+                  +icon('coin')(width="8", height="8")
+
+              .docs-contacts__col
+                  span.docs-contacts__desc Реестр МФО на сайте Банка России: 
+                  a.docs-contacts__link(href="https://cbr.ru/microfinance/registry") https://cbr.ru/microfinance/registry
+
+            .docs-contacts__row
+              .docs-contacts__col
+                .docs-contacts__icon
+                  +icon('bank')(width="8", height="8")
+
+              .docs-contacts__col
+                  span.docs-contacts__desc Банк России:
+                  a.docs-contacts__link(href="https://cbr.ru") https://cbr.ru
