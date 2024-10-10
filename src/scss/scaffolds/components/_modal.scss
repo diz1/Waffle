@@ -1,0 +1,161 @@
+@include from(xs) {
+  .modal {
+    margin: 0;
+
+    background: var(--color-white);
+    border: none;
+
+    &__wrapper {
+      position: fixed;
+      top: 0;
+      right: 0;
+
+      display: grid;
+      grid-template-rows: repeat(3, min-content) 1fr;
+      align-items: center;
+      justify-items: center;
+      row-gap: 22px;
+      width: 100dvw;
+      height: 100dvh;
+
+      padding: 15px;
+
+      background: var(--color-white);
+    }
+
+    &__title {
+      color: var(--color-black);
+      font-weight: 700;
+      font-size: 20px;
+      font-family: $font-secondary;
+      text-align: center;
+    }
+
+    &__close {
+      @include button-reset;
+
+      position: absolute;
+      top: 15px;
+      right: 15px;
+
+      width: 15px;
+      height: 15px;
+      padding: 0;
+    }
+
+    &__icon {
+      position: relative;
+
+      width: 88px;
+      height: 88px;
+
+      &-badge {
+        position: absolute;
+        top: 5px;
+        left: -12px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+
+        background: var(--color-white);
+
+        border-radius: 74px;
+        box-shadow: 0 0 10px 0 rgba(57, 57, 57, 0.16);
+      }
+    }
+
+    &__text {
+      color: var(--color-black-1);
+      font-size: 15px;
+    }
+
+    &__button {
+      align-self: end;
+
+      min-width: 100%;
+      padding: 14px;
+
+      font-size: 12px;
+    }
+
+    &::backdrop {
+      background: transparentize(#000, .7);
+    }
+  }
+}
+
+@include from(sm) {
+  .modal {
+    width: 100%;
+    max-width: 524px;
+    margin: auto;
+    padding: 32px;
+
+    background: var(--color-white);
+    border-radius: 40px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.20);
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__icon {
+      width: 112px;
+      height: 112px;
+
+      &-badge {
+        top: 6px;
+        left: -15px;
+
+        width: 42px;
+        height: 42px;
+
+        & > .icon {
+          width: 28px;
+          height: 28px;
+        }
+      }
+
+      & > .icon {
+        width: 112px;
+        height: 112px;
+      }
+    }
+
+    &__close {
+      top: 0;
+      right: 0;
+
+      width: 22px;
+      height: 22px;
+
+      .icon {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    &__wrapper {
+      position: relative;
+      top: auto;
+      right: auto;
+
+      width: auto;
+      height: 100%;
+      padding: 0;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__button {
+      padding: 26px;
+
+      font-size: 18px;
+    }
+  }
+}

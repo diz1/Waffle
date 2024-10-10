@@ -1,0 +1,11 @@
+extends ../layouts/default.pug
+
+block variables
+  - var pageTitle = "Витрина предложений";
+  - var pageDesc = "";
+  // - var ogType = "website|article";
+
+block content
+  div(style="display: flex; flex-flow: column; gap: 16px; padding: 24px;")
+    +button()(onclick="tBank.showModal()") T-bank error
+    +button()(onclick="alfa.showModal()") Alfa bank error

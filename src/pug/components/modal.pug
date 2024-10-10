@@ -1,0 +1,16 @@
+mixin modal(id="defaultModal", iconName="t-bank", text="Карты данного банка не поддерживаются :(")
+  dialog.modal(id=id)&attributes(attributes)
+    .modal__wrapper
+      button.modal__close(onclick=id + ".close()")
+        +icon('cross-fill')(width="15", height="15")
+
+      .modal__icon
+        .modal__icon-badge
+          +icon('exclamation-mark')(width="22", height="22")
+        +icon('modal-' + iconName)(width="88", height="88")
+
+      h3.modal__title #{text}
+
+      span.modal__text Используйте другую карту
+
+      +button().modal__button(onclick=id + ".close()") Продолжить

@@ -5,6 +5,12 @@
 
     bottom: 10px;
 
+    animation-name: inform;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+
     // .inform-modal__wrapper
     &__wrapper {
       display: grid;
@@ -65,5 +71,21 @@
       width: 30px;
       height: 30px;
     }
+  }
+}
+
+@keyframes inform {
+  from {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  to {
+    display: none;
+
+    opacity: 0;
   }
 }
