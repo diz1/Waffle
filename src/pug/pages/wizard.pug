@@ -1,0 +1,505 @@
+extends ../layouts/default.pug
+
+block variables
+  - var pageTitle = "Оформление";
+  - var pageDesc = "";
+  // - var ogType = "website|article";
+
+block content
+  .steps
+    .container
+      .steps__wrapper
+        ul.steps__list
+          li.steps__item.steps__item--active(data-step="1") 1. Личные данные
+          li.steps__item(data-step="2") 2. Паспортные данные
+          li.steps__item(data-step="3") 3. Адрес регистрации
+          li.steps__item(data-step="4") 4. Дополнительные данные
+          li.steps__item(data-step="5") 5. Проверка пользовательских данных
+          li.steps__item(data-step="6") 6. Выбор банка
+          li.steps__item(data-step="7") 7. Привязка карты
+          li.steps__item(data-step="8") 8. Дополнительная проверка
+  section.section.wizard
+    .container.container--sm
+      .wizard__wrapper
+        .wizard__content
+
+          .wizard__form.form-step
+            // Top step-1
+            .form-step__top.form-step__top--active(data-step="1")
+              .form-step__icon
+                +icon('person-2')(width="12", height="12")
+              h2.form-step__title Личные данные
+
+            // Top step-2
+            .form-step__top(data-step="2")
+              .form-step__icon
+                +icon('passport-2')(width="12", height="12")
+              h2.form-step__title Паспортные данные
+
+            // Top step-3
+            .form-step__top(data-step="3")
+              .form-step__icon
+                +icon('pin')(width="12", height="12")
+              h2.form-step__title Адрес регистрации
+
+            // Top step-4
+            .form-step__top(data-step="4")
+              .form-step__icon
+                +icon('form')(width="12", height="12")
+              h2.form-step__title Дополнительные данные
+
+            // Top step-5
+            .form-step__top(data-step="5")
+              .form-step__icon
+                +icon('person-2')(width="12", height="12")
+              h2.form-step__title Проверка пользовательских данных
+
+            // Top step-6
+            .form-step__top(data-step="6")
+              .form-step__icon
+                +icon('bank')(width="12", height="12")
+              h2.form-step__title Выбор вашего банка
+
+            // Top step-7
+            .form-step__top(data-step="7")
+              .form-step__icon.form-step__icon--green
+                +icon('checkmark')(width="12", height="12")
+              h2.form-step__title Проверка прошла успешно
+
+            // Top step-8
+            .form-step__top(data-step="8")
+              .form-step__icon
+                +icon('search')(width="12", height="12")
+              h2.form-step__title Дополнительная проверка
+
+            // Desc step-4
+            span.form-step__desc(data-step="4") Вы можете пропустить этот шаг
+
+            // Desc step-5
+            span.form-step__desc(data-step="5") Обычно это занимает меньше минуты, пожалуйста, не закрывайте страницу!
+
+            // Desc step-6
+            span.form-step__desc(data-step="6") Выберите банк на карту которого, вы хотите получить займ
+
+            // Desc step-7
+            span.form-step__desc(data-step="7") Остался один шаг!
+
+            // Desc step-8
+            span.form-step__desc(data-step="8") Обычно это занимает меньше минуты, пожалуйста, не закрывайте страницу!
+
+            // Badge step-4
+            .form-step__badge(data-step="4")
+              button.form-step__button(data-next)
+                span Пропустить этот шаг
+                +icon('arrow-right')(width="18", height="18")
+
+            .form-step__content
+              .form-step__header
+                .form-step__header-left
+                  span.form-step__text Сумма и сроки займа:
+                  strong.form-step__text 
+                    strong 35 000 ₽ 
+                    | на 
+                    strong 7 дней
+                .form-step__header-right
+                  strong.form-step__text Изменить
+                  .form-step__header-icon
+                    +icon('pencil-2')(width="12", height="12")
+
+              // Form step-1
+              form.form-step__form.form-step__form--active(data-step="1")
+                h3.form-step__subtitle До получения денег: 
+                  strong 7 шагов
+
+                fieldset.form-group
+                  legend.form-group__title Номер телефона *
+                  label.form-group__field.form-field.form-field--error
+                    input.form-field__input#phone-1(placeholder="+7 (999) 123-32-21", required)
+                    span.form-field__error Неправильный номер
+
+                fieldset.form-group
+                  legend.form-group__title SMS код *
+                  label.form-group__field.form-field
+                    input.form-field__input#sms-1(placeholder="1 2 3 4", required)
+                    span.form-field__info Отправить повторно, через 
+                      strong 15 
+                      | сек.
+
+                fieldset.form-group.form-group--double
+                  label.form-group__field.form-field
+                    input.form-field__input(type="radio", name="confirmType", value="text", checked)
+                    span.form-field__text Текстовое сообщение (SMS)
+                  label.form-group__field.form-field
+                    input.form-field__input(type="radio", name="confirmType", value="text")
+                    span.form-field__text Голосовой вызов
+
+                fieldset.form-group
+                  +button('button', 'accent-orange').form-group__button(type="button") Подтвердить
+
+                fieldset.form-group
+                  +button('button', 'accent-orange-reverse').form-group__button(type="button") Получить код
+
+                hr.form-group__line
+
+                fieldset.form-group
+                  legend.form-group__title Почта
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Для документов")
+
+                fieldset.form-group
+                  legend.form-group__title Фамилия *
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Введите фамилию", required)
+
+                fieldset.form-group
+                  legend.form-group__title Имя *
+                  label.form-group__field.form-field.form-field--success
+                    input.form-field__input(placeholder="Введите имя", required)
+
+                fieldset.form-group
+                  legend.form-group__title Отчество
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Введите отчество")
+                  label.form-group__field.form-field
+                    input.form-field__input(type="checkbox", value="text")
+                    span.form-field__text Нет отчества
+
+                fieldset.form-group.form-group--double
+                  legend.form-group__title Пол
+                  label.form-group__field.form-field
+                    input.form-field__input(type="checkbox", value="text")
+                    span.form-field__text Мужской
+                  label.form-group__field.form-field
+                    input.form-field__input(type="checkbox", value="text")
+                    span.form-field__text Женский
+
+                hr.form-group__line
+
+                fieldset.form-group
+                  label.form-group__field.form-field.form-field--error
+                    input.form-field__input(type="checkbox", value="text")
+                    span.form-field__text Я ознакомлен и согласен со 
+                      strong 
+                        a(href="#") следующим
+
+                fieldset.form-group
+                  label.form-group__field.form-field.form-field--error
+                    input.form-field__input(type="checkbox", value="text")
+                    span.form-field__text Согласен с условиями платной периодической подписки ценой 
+                      strong 999 
+                      | рублей каждые 
+                      strong 7 
+                      | дней в виде безакцептных рекуррентных платежей. Осознаю возмездный характер оказываемых услуг.
+
+
+              // Form step-2
+              form.form-step__form(data-step="2")
+                h3.form-step__subtitle До получения денег: 
+                  strong 6 шагов
+
+                fieldset.form-group
+                  legend.form-group__title Серия *
+                  label.form-group__field.form-field
+                    input.form-field__input#series-2(placeholder="Серия", required)
+
+                fieldset.form-group
+                  legend.form-group__title Номер *
+                  label.form-group__field.form-field
+                    input.form-field__input#number-2(placeholder="Номер", required)
+
+                fieldset.form-group
+                  legend.form-group__title Код подразделения *
+                  label.form-group__field.form-field
+                    input.form-field__input#code-2(placeholder="Код подразделения", required)
+
+                fieldset.form-group
+                  legend.form-group__title Кем выдан *
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Кем выдан", required)
+
+                fieldset.form-group
+                  legend.form-group__title Место рождения *
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Место рождения", required)
+
+                fieldset.form-group
+                  legend.form-group__title СНИЛС *
+                    span.form-group__badge 5%
+                  label.form-group__field.form-field
+                    input.form-field__input#snils-2(placeholder="+ 5% на одобрение", required)
+
+
+              // Form step-3
+              form.form-step__form(data-step="3")
+                h3.form-step__subtitle До получения денег: 
+                  strong 5 шагов
+
+                fieldset.form-group
+                  legend.form-group__title Регион *
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Регион", required)
+
+                fieldset.form-group
+                  legend.form-group__title Город *
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Город", required)
+
+                fieldset.form-group
+                  legend.form-group__title Улица *
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Улица", required)
+
+                fieldset.form-group
+                  legend.form-group__title Дом *
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Дом", required)
+
+                fieldset.form-group
+                  legend.form-group__title Квартира *
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Квартира", required)
+                fieldset.form-group
+                  label.form-group__field.form-field
+                    input.form-field__input(type="checkbox", value="text")
+                    span.form-field__text Совпадает с адресом проживания
+
+                hr.form-group__line
+
+                h3.form-step__subtitle Адрес проживания
+
+                fieldset.form-group
+                  legend.form-group__title Регион *
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Регион", required)
+
+                fieldset.form-group
+                  legend.form-group__title Город *
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Город", required)
+
+                fieldset.form-group
+                  legend.form-group__title Улица *
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Улица", required)
+
+                fieldset.form-group
+                  legend.form-group__title Дом *
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Дом", required)
+
+                fieldset.form-group
+                  legend.form-group__title Квартира *
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Квартира", required)
+
+              // Form step-4
+              form.form-step__form(data-step="4")
+                h3.form-step__subtitle До получения денег: 
+                  strong 4 шага
+
+                fieldset.form-group
+                  legend.form-group__title Образование
+                    span.form-group__badge 5%
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Образование")
+
+                fieldset.form-group
+                  legend.form-group__title Семейное положение
+                    span.form-group__badge 5%
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Семейное положение")
+
+                fieldset.form-group
+                  legend.form-group__title Наличие работы
+                    span.form-group__badge 5%
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Наличие работы")
+
+                fieldset.form-group
+                  legend.form-group__title Наличие открытых займов
+                    span.form-group__badge 5%
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Наличие открытых займов")
+
+                fieldset.form-group
+                  legend.form-group__title Месячный доход
+                    span.form-group__badge 5%
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Месячный доход")
+
+                fieldset.form-group
+                  legend.form-group__title Дополнительное контактное лицо
+                    span.form-group__badge 5%
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Дополнительное контактное лицо")
+
+                fieldset.form-group
+                  legend.form-group__title ФИО
+                    span.form-group__badge 5%
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Доп. конт.лица")
+
+                fieldset.form-group
+                  legend.form-group__title Телефон
+                    span.form-group__badge 5%
+                  label.form-group__field.form-field
+                    input.form-field__input#phone-2(placeholder="Доп. конт.лица")
+
+              // Form step-6
+              form.form-step__form(data-step="6")
+                fieldset.form-group
+                  label.form-group__field.form-field
+                    input.form-field__input(placeholder="Название банка")
+                    .form-field__icon
+                      +icon('search')(width="15", height="15")
+
+                .form-step__banks
+                  .step-bank(data-bank="sber")
+                    +picture('img/sber.png', 'img/sber-desktop.png', 'img/sber-desktop.png').step-bank__image
+                    .step-bank__title Сбербанк
+                    .step-bank__icon
+                      +icon('cross')(width="10", height="10")
+                      +icon('checkmark')(width="10", height="10")
+
+                  .step-bank.step-bank--error(data-bank="t-bank")
+                    +picture('img/t-bank.png', 'img/t-bank-desktop.png', 'img/t-bank-desktop.png').step-bank__image
+                    .step-bank__title Тинькофф Банк
+                    .step-bank__icon
+                      +icon('cross')(width="10", height="10")
+                      +icon('checkmark')(width="10", height="10")
+
+                  .step-bank.step-bank--success(data-bank="vtb")
+                    +picture('img/vtb.png', 'img/vtb-desktop.png', 'img/vtb-desktop.png').step-bank__image
+                    .step-bank__title Банк ВТБ
+                    .step-bank__icon
+                      +icon('cross')(width="10", height="10")
+                      +icon('checkmark')(width="10", height="10")
+
+                  .step-bank(data-bank="alfa")
+                    +picture('img/alfa.png', 'img/alfa-desktop.png', 'img/alfa-desktop.png').step-bank__image
+                    .step-bank__title Альфа Банк
+                    .step-bank__icon
+                      +icon('cross')(width="10", height="10")
+                      +icon('checkmark')(width="10", height="10")
+
+                  .step-bank(data-bank="raif")
+                    +picture('img/raif.png', 'img/raif-desktop.png', 'img/raif-desktop.png').step-bank__image
+                    .step-bank__title Райффайзен Банк
+                    .step-bank__icon
+                      +icon('cross')(width="10", height="10")
+                      +icon('checkmark')(width="10", height="10")
+
+                .form-step__warning
+                  .form-step__warning-icon
+                    +icon('alert')(width="18", height="18")
+                  p.form-step__warning-text К сожалению, с картами данного банка наш сервис временно не работает из-за технических проблем на стороне банка, пожалуйста выберите другой банк. Если у вас нет карты другого банка, можете посмотреть предложения наших партнеров, кликнув 
+                    a сюда
+                  
+
+              // Form step-7
+              form.form-step__form(data-step="7")
+                h3.form-step__subtitle Идентификация клиента
+
+                span.form-step__desc.form-step__desc--mini Мы спишем с вашей карты (
+                  strong и вернем
+                  | ) небольшую сумму (
+                  strong 1.17 руб.
+                  | ) для проверки ее подлинности. Это не обязывает вас брать займ, вы вправе отказаться от услуг в любое время!
+
+                .form-step__card.form-step-card
+                  fieldset.form-group
+                    legend.form-group__title Номер карты
+                    label.form-group__field.form-field
+                      input.form-field__input#cardNumber
+                      .form-field__icon(style="width: 24px")
+                        +icon('mastercard')(width="24", height="15")
+
+                  .form-step-card__row
+                    fieldset.form-group.form-group--card
+                      legend.form-group__title Срок действия
+                      label.form-group__field.form-field
+                        input.form-field__input#cardMM
+                      span /
+                      label.form-group__field.form-field
+                        input.form-field__input#cardYY
+
+                    fieldset.form-group
+                      legend.form-group__title CVC
+                      label.form-group__field.form-field
+                        input.form-field__input#cardCVC
+                        .form-field__icon
+                          +icon('question')(width="15", height="15")
+
+                fieldset.form-group
+                  +button('button').form-group__button(type="button", data-next) Подтвердить
+
+                .form-step-card__accept
+                  span Мы принимаем:
+                  .form-step-card__cards
+                    +icon('visa-2')(width="52", height="20")
+                    +icon('mastercard-2')(width="52", height="20")
+                    +icon('mir-2')(width="52", height="20")
+                    +icon('pci-2')(width="52", height="20")
+
+                hr.form-group__line
+
+                span.form-step__desc.form-step__desc--mini Применяемая технология передачи данных гарантирует безопасность по сделкам с банковскими картами путем использования протоколов Secure Sockets Layer (SSL). Соединение защищено 128-битным SSL шифрованием
+
+                .form-step__time
+                  span.form-step__time-title Заявка действительна: 
+                  .form-step__time-clock
+                    +icon('clock-fill')(width="16", height="16")
+                    strong 59:59:59
+
+              .form-step__footer
+                fieldset.form-group
+                  +button('button').form-group__button(data-next) Продолжить
+
+            // Form step-5
+            .form-step__check.form-step-check(data-step="5")
+              .form-step-check__items
+                .form-step-check__item
+                  +icon('card')(width="28", height="28")
+                .form-step-check__div
+                  +icon('wizard-div-sm')(width="65", height="3")
+                  +icon('wizard-div')(width="276", height="3")
+                .form-step-check__item
+                  +icon('pen-to-square')(width="28", height="28")
+                .form-step-check__div
+                  +icon('wizard-div-sm')(width="65", height="3")
+                  +icon('wizard-div')(width="276", height="3")
+                .form-step-check__item
+                  +icon('passport')(width="28", height="28")
+
+              span.form-step-check__text Проверка регистрационных данных
+
+              .form-step-check__loader
+                span.form-step-check__percent 0%
+                .form-step-check__line
+                  .form-step-check__line-filler
+
+            // Form step-8
+            .form-step__check.form-step-check(data-step="8")
+              .form-step-check__items
+                .form-step-check__item
+                  +icon('form-fill')(width="28", height="28")
+                .form-step-check__div
+                  +icon('wizard-div-sm')(width="65", height="3")
+                  +icon('wizard-div')(width="276", height="3")
+                .form-step-check__item
+                  +icon('handshake')(width="28", height="28")
+                .form-step-check__div
+                  +icon('wizard-div-sm')(width="65", height="3")
+                  +icon('wizard-div')(width="276", height="3")
+                .form-step-check__item
+                  +icon('hourglass')(width="28", height="28")
+
+              span.form-step-check__text Опрашиваем партнеров
+
+              .form-step-check__loader
+                span.form-step-check__percent 0%
+                .form-step-check__line
+                  .form-step-check__line-filler
+
+            .form-step__bottom
+              span Деньги могут быть у вас уже в 01:39.*

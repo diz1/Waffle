@@ -36,6 +36,13 @@
 
     &.button--default {
       background-color: var(--color-black);
+
+      &[disabled] {
+        color: var(--color-black-1);
+
+        background-color: #F1F1F1;
+        cursor: not-allowed;
+      }
     }
 
     &.button--accent {
@@ -44,6 +51,14 @@
 
     &.button--accent-orange {
       background-color: var(--color-accent-orange);
+      border: 2px solid rgba(255, 255, 255, 0.22);
+    }
+
+    &.button--accent-orange-reverse {
+      color: var(--color-accent-orange-2);
+
+      background-color: transparentize($accent-orange-2, .75);
+      border: 2px solid transparentize($accent-orange-2, .78);
     }
 
     &.button--white {

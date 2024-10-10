@@ -1,0 +1,80 @@
+extends ../layouts/default.pug
+
+block variables
+  - var pageTitle = "Документы";
+  - var pageDesc = "";
+  // - var ogType = "website|article";
+
+block content
+  section.section.documents
+    .container.container--sm
+      .documents__wrapper
+        h1.documents__title Документы
+
+        .documents__items
+          a.documents__item.documents-item(href="#")
+            .documents-item__icon
+              +icon('document')(width="18", height="18")
+            .documents-item__text Согласие на получение рекламных материалов
+            .documents-item__arrow
+              +icon('arrow-right')(width="26", height="26")
+
+          a.documents__item.documents-item(href="#")
+            .documents-item__icon
+              +icon('document')(width="18", height="18")
+            .documents-item__text Приложение к согласие на обработку персональных данных
+            .documents-item__arrow
+              +icon('arrow-right')(width="26", height="26")
+
+          a.documents__item.documents-item(href="#")
+            .documents-item__icon
+              +icon('document')(width="18", height="18")
+            .documents-item__text Согласие на обработку персональных данных
+            .documents-item__arrow
+              +icon('arrow-right')(width="26", height="26")
+
+          a.documents__item.documents-item(href="#")
+            .documents-item__icon
+              +icon('document')(width="18", height="18")
+            .documents-item__text Порядок возврата денежных средств
+            .documents-item__arrow
+              +icon('arrow-right')(width="26", height="26")
+
+          a.documents__item.documents-item(href="#")
+            .documents-item__icon
+              +icon('document')(width="18", height="18")
+            .documents-item__text Политика в отношении обеспечения безопасности персональных данных
+            .documents-item__arrow
+              +icon('arrow-right')(width="26", height="26")
+
+          a.documents__item.documents-item(href="#")
+            .documents-item__icon
+              +icon('document')(width="18", height="18")
+            .documents-item__text Безопасность при проведении операций с использованием банковских карт
+            .documents-item__arrow
+              +icon('arrow-right')(width="26", height="26")
+
+          a.documents__item.documents-item(href="#")
+            .documents-item__icon
+              +icon('document')(width="18", height="18")
+            .documents-item__text Тарифы сервиса
+            .documents-item__arrow
+              +icon('arrow-right')(width="26", height="26")
+
+          a.documents__item.documents-item(href="#")
+            .documents-item__icon
+              +icon('document')(width="18", height="18")
+            .documents-item__text Публичная оферта
+            .documents-item__arrow
+              +icon('arrow-right')(width="26", height="26")
+
+          a.documents__item.documents-item(href="#")
+            .documents-item__icon
+              +icon('document')(width="18", height="18")
+            .documents-item__text Соглашение о применении рекуррентных платежей
+            .documents-item__arrow
+              +icon('arrow-right')(width="26", height="26")
+
+        +button().documents__button Смотреть все документы
+
+        include ../parts/offers-items.pug

@@ -1,0 +1,15 @@
+@include from(xs) {
+  .wizard {
+    position: relative;
+
+    padding-top: 32px;
+    padding-bottom: 80px;
+  }
+}
+
+@include from(lg) {
+  .wizard {
+    padding-top: 100px;
+    padding-bottom: 140px;
+  }
+}

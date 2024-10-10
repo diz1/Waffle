@@ -1,0 +1,52 @@
+extends ../layouts/default.pug
+
+block variables
+  - var pageTitle = "Отписаться от услуг";
+  - var pageDesc = "";
+  // - var ogType = "website|article";
+
+block content
+  section.section.unsub
+    .container.container--sm
+      .unsub__wrapper
+        h1.unsub__title Отписаться от платных услуг
+
+        .form-step
+          .form-step__content
+            .form-step__form.form-step__form--active.unsub__form
+              fieldset.form-group
+                legend.form-group__title Номер телефона *
+                label.form-group__field.form-field
+                  input.form-field__input(placeholder="Номер телефона")
+    
+              fieldset.form-group
+                legend.form-group__title Год рождения *
+                label.form-group__field.form-field
+                  input.form-field__input(placeholder="Год рождения")
+                  
+              fieldset.form-group
+                +button('button').form-group__button.unsub__button Отписаться
+
+              span.form-step__desc.form-step__desc--active.unsub__desc Если вы более не нуждаетесь в платных услугах сервиса, вы можете отписаться самостоятельно. Если не получается отписаться самостоятельно, свяжитесь с нами, мы поможем!
+
+              hr.form-group__line
+
+              .unsub__links
+                a.unsub__link(href="tel:79991234567")
+                  .unsub__link-icon
+                    +icon('phone-fill')(width="10", height="10")
+                  span +8 (000) 0000-00-0
+
+                a.unsub__link(href="https://t.me/woffle")
+                  .unsub__link-icon
+                    +icon('coin')(width="10", height="10")
+                  span @woffle
+
+                a.unsub__link(href="mailto:woffle@gmail.con")
+                  .unsub__link-icon
+                    +icon('bank')(width="10", height="10")
+                  span woffle@gmail.con
+
+        include ../parts/offers-items.pug
+
+        span.unsub__note Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl. Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.

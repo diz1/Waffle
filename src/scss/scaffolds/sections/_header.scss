@@ -1,5 +1,7 @@
 @include from(xs) {
   .header {
+    border-bottom: 2px solid #E9E9E9;
+
     &__wrapper {
       display: flex;
       align-items: center;

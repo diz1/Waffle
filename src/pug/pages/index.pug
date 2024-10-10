@@ -16,13 +16,16 @@ block content
           span.intro__desc Оформи уже сегодня!
 
         .intro__calc.calc
-          label.calc__label
-            span 0
-            .calc__input-block
-              input.calc__input(type="range", min="0", max="100000", step="1000")
-              .calc__badge
-                span.calc__badge-inner 35 000 ₽
-            span 100 000
+          label.range
+            span.range__min 0
+
+            .range__block
+              input.range__input(type="range", min="0", max="100000", step="1000")
+
+              .range__badge
+                span 35 000 ₽
+
+            span.range__max 100 000
 
           .calc__info
             span К возврату: 
@@ -30,9 +33,9 @@ block content
 
           span.calc__desc Гарантируем повышенное одобрение до 31.12.2024
 
-        +button('a').intro__button(href="#") Оформить заявку
+        +button('a').intro__button(href="/wizard.html") Оформить заявку
 
-  section.section.benefits
+  section.section.benefits(id="benefits")
     .container.container--sm
       .benefits__wrapper
         h2.benefits__title Займ - это просто
@@ -77,7 +80,7 @@ block content
                 .benefits-tabs-card__text Приготовьте паспорт и освободите 10&nbsp;минут своего времени
   
                 .benefits-tabs-card__button
-                  +button('a')(href="#") Получить сейчас
+                  +button('a')(href="/wizard.html") Получить сейчас
 
             .benefits-tabs__card.benefits-tabs-card(data-tab="2")
               .benefits-tabs-card__wrapper
@@ -111,7 +114,7 @@ block content
                 .benefits-tabs-card__text Вы можете вернуть деньги любым удобным способом: от банковского перевода до оплаты картой.
   
                 .benefits-tabs-card__button
-                  +button('a')(href="#") Получить сейчас
+                  +button('a')(href="/wizard.html") Получить сейчас
 
               span.benefits-tabs-card__desc Условия возврата могут отличаться в зависимости от выбранной вами микрофинансовой компании
 
@@ -285,4 +288,4 @@ block content
           .ways__card
             +icon('mir')(width="80", height="34")
 
-        +button('a').ways__button Оформить заявку
+        +button('a').ways__button(href="/wizard.html") Оформить заявку

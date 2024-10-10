@@ -4,6 +4,9 @@ $black-1: #857E79;
 $white: #fff;
 $accent-green: #759C5C;
 $accent-orange: #C38D76;
+$accent-orange-2: #CD9475;
+$error: #BC5050;
+$success: #759C5C;
 
 $test: #638c4a;
 $test-1: #82a56d;
@@ -15,6 +18,7 @@ $test-1: #82a56d;
 
   --color-accent-green: rgb(#{hextorgb($accent-green)});
   --color-accent-orange: rgb(#{hextorgb($accent-orange)});
+  --color-accent-orange-2: rgb(#{hextorgb($accent-orange-2)});
 }
 
 @mixin dark-mode {
@@ -24,6 +28,7 @@ $test-1: #82a56d;
 
   --color-accent-green: rgb(#{hextorgb($accent-green)});
   --color-accent-orange: rgb(#{hextorgb($accent-orange)});
+  --color-accent-orange-2: rgb(#{hextorgb($accent-orange-2)});
 }
 
 .dark-mode {

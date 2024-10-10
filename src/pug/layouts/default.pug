@@ -40,6 +40,51 @@ html.no-js(lang="ru")
     main
       block content
 
+      .inform-modal
+        .inform-modal__wrapper
+          span.inform-modal__title Выдан новый займ!
+          .inform-modal__icon
+            +icon('check')(width="16", height="16")
+          span.inform-modal__text 
+            strong Рамзан 
+            | из 
+            strong Грозного 
+            | только что получил займ 
+            strong 25000 ₽
+
+      dialog.range-modal
+        .range-modal__wrapper
+          button.range-modal__close
+            +icon('cross-fill')(width="15", height="15")
+
+          h3.range-modal__title Сумма и срок
+
+          label.range.range--in-modal
+            span.range__min 0
+            .range__block
+              input.range__input(type="range", min="0", max="100000", step="1000", value="35000")
+              .range__badge
+                span 35 000 ₽
+            span.range__max 100 000
+
+          label.range.range--in-modal
+            span.range__min 0
+            .range__block
+              input.range__input(type="range", min="0", max="30", step="1", value="7")
+              .range__badge
+                span 7 дней
+            span.range__max 30
+
+          hr.range-modal__line
+
+          span.range-modal__text К возврату: 
+            strong 35 000 ₽
+
+          span.range-modal__text На срок: 
+            strong 7 дней
+
+          +button().range-modal__button Применить
+
     block footer
       include ../parts/footer.pug
 
