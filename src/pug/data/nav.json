@@ -10,7 +10,7 @@
     },
     {
       "title": "Отписаться от услуг",
-      "link": "/unsubscribe.html"
+      "link": "./unsubscribe.html"
     }
   ]
 }
