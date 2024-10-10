@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Главная страница — Woffle</title>
+    <title>Оформление — Woffle</title>
     <meta name="description" content="Woffle">
     <script>
       document.documentElement.classList.remove('no-js')
@@ -26,9 +26,9 @@
     <link rel="preload" as="font" href="fonts/montserrat/Montserrat-MediumItalic.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="fonts/montserrat/Montserrat-Bold.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="canonical" href="#">
-    <meta name="application-name" content="Главная страница — Woffle">
-    <meta name="apple-mobile-web-app-title" content="Главная страница — Woffle">
-    <meta property="og:title" content="Главная страница — Woffle">
+    <meta name="application-name" content="Оформление — Woffle">
+    <meta name="apple-mobile-web-app-title" content="Оформление — Woffle">
+    <meta property="og:title" content="Оформление — Woffle">
     <meta property="og:locale" content="ru">
     <meta property="og:description" content="Woffle">
     <meta property="og:url" content="#">
@@ -36,13 +36,13 @@
     <meta property="og:type" content="website">
     <!--meta(property="og:image", content=siteUrl + "/img/cover.jpg")-->
     <meta property="twitter:card" content="summary">
-    <meta property="twitter:title" content="Главная страница — Woffle">
+    <meta property="twitter:title" content="Оформление — Woffle">
     <!--meta(property="twitter:image", content=siteUrl + "/img/cover.jpg")-->
     <script type="application/ld+json">
       {
         "@context":"https://schema.org",
         "@type":"WebSite",
-        "headline":"Главная страница — Woffle",
+        "headline":"Оформление — Woffle",
         "description":"Woffle",
         "name":"Woffle",
         "url":"#"
@@ -159,401 +159,653 @@
       </div>
     </header>
     <main>
-      <section class="section intro">
+      <div class="steps">
         <div class="container">
-          <div class="intro__wrapper">
-            <picture>
-              <source media="(min-width: 1024px)" srcset="img/intro-bg-desktop.avif 1x, img/intro-bg-desktop.avif 2x">
-              <source media="(min-width: 1024px)" srcset="img/intro-bg-desktop.webp 1x, img/intro-bg-desktop.webp 2x">
-              <source media="(min-width: 1024px)" srcset="img/intro-bg-desktop.png 1x, img/intro-bg-desktop.png 2x">
-              <source media="(min-width: 768px)" srcset="img/intro-bg-desktop.avif 1x, img/intro-bg-desktop.avif 2x">
-              <source media="(min-width: 768px)" srcset="img/intro-bg-desktop.webp 1x, img/intro-bg-desktop.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/intro-bg-desktop.png 1x, img/intro-bg-desktop.png 2x">
-              <source type="image/avif" srcset="img/intro-bg.avif 1x, img/intro-bg.avif 2x">
-              <source type="image/webp" srcset="img/intro-bg.webp 1x, img/intro-bg.webp 2x"><img class="intro__bg" src="img/intro-bg.png" srcset="img/intro-bg.png 2x" width height alt loading="lazy">
-            </picture>
-            <div class="intro__info">
-              <h1 class="intro__title">Первый&nbsp;заём без&nbsp;процентов</h1><span class="intro__desc">Оформи уже сегодня!</span>
-            </div>
-            <div class="intro__calc calc">
-              <label class="range"><span class="range__min">0</span>
-                <div class="range__block">
-                  <input class="range__input" type="range" min="0" max="100000" step="1000">
-                  <div class="range__badge"><span>35 000 ₽</span></div>
-                </div><span class="range__max">100 000</span>
-              </label>
-              <div class="calc__info"><span>К возврату: </span><span>35 000 ₽</span></div><span class="calc__desc">Гарантируем повышенное одобрение до 31.12.2024</span>
-            </div>
-            <a class="button button--default intro__button" href="/wizard.html">Оформить заявку
-            </a>
+          <div class="steps__wrapper">
+            <ul class="steps__list">
+              <li class="steps__item steps__item--active" data-step="1">1. Личные данные</li>
+              <li class="steps__item" data-step="2">2. Паспортные данные</li>
+              <li class="steps__item" data-step="3">3. Адрес регистрации</li>
+              <li class="steps__item" data-step="4">4. Дополнительные данные</li>
+              <li class="steps__item" data-step="5">5. Проверка пользовательских данных</li>
+              <li class="steps__item" data-step="6">6. Выбор банка</li>
+              <li class="steps__item" data-step="7">7. Привязка карты</li>
+              <li class="steps__item" data-step="8">8. Дополнительная проверка</li>
+            </ul>
           </div>
         </div>
-      </section>
-      <section class="section benefits" id="benefits">
+      </div>
+      <section class="section wizard">
         <div class="container container--sm">
-          <div class="benefits__wrapper">
-            <h2 class="benefits__title">Займ - это просто</h2>
-            <div class="benefits__tabs benefits-tabs">
-              <div class="benefits-tabs__buttons">
-                <div class="benefits-tabs__button benefits-tabs__button--active" data-tab="1"><span>Как получить?</span></div>
-                <div class="benefits-tabs__button" data-tab="2"><span>Как вернуть?</span></div>
-              </div>
-              <div class="benefits-tabs__content">
-                <div class="benefits-tabs__card benefits-tabs-card benefits-tabs-card--active" data-tab="1">
-                  <div class="benefits-tabs-card__wrapper">
-                    <div class="benefits-tabs-card__items">
-                      <div class="benefits-tabs-card__item benefits-tabs-card-item">
-                        <div class="benefits-tabs-card-item__icon" data-item="1">
-                          <svg class="icon icon-pencil" width="28" height="28">
-                            <use href="#icon-pencil"></use>
-                          </svg>
-                        </div>
-                        <h3 class="benefits-tabs-card-item__title">Оформляете заявку</h3><span class="benefits-tabs-card-item__text">Нужен только паспорт</span>
-                      </div>
-                      <div class="benefits-tabs-card__div">
-                        <svg class="icon icon-div" width="3" height="48">
-                          <use href="#icon-div"></use>
+          <div class="wizard__wrapper">
+            <div class="wizard__content">
+              <div class="wizard__form form-step">
+                <!-- Top step-1-->
+                <div class="form-step__top form-step__top--active" data-step="1">
+                  <div class="form-step__icon">
+                    <svg class="icon icon-person-2" width="12" height="12">
+                      <use href="#icon-person-2"></use>
+                    </svg>
+                  </div>
+                  <h2 class="form-step__title">Личные данные</h2>
+                </div>
+                <!-- Top step-2-->
+                <div class="form-step__top" data-step="2">
+                  <div class="form-step__icon">
+                    <svg class="icon icon-passport-2" width="12" height="12">
+                      <use href="#icon-passport-2"></use>
+                    </svg>
+                  </div>
+                  <h2 class="form-step__title">Паспортные данные</h2>
+                </div>
+                <!-- Top step-3-->
+                <div class="form-step__top" data-step="3">
+                  <div class="form-step__icon">
+                    <svg class="icon icon-pin" width="12" height="12">
+                      <use href="#icon-pin"></use>
+                    </svg>
+                  </div>
+                  <h2 class="form-step__title">Адрес регистрации</h2>
+                </div>
+                <!-- Top step-4-->
+                <div class="form-step__top" data-step="4">
+                  <div class="form-step__icon">
+                    <svg class="icon icon-form" width="12" height="12">
+                      <use href="#icon-form"></use>
+                    </svg>
+                  </div>
+                  <h2 class="form-step__title">Дополнительные данные</h2>
+                </div>
+                <!-- Top step-5-->
+                <div class="form-step__top" data-step="5">
+                  <div class="form-step__icon">
+                    <svg class="icon icon-person-2" width="12" height="12">
+                      <use href="#icon-person-2"></use>
+                    </svg>
+                  </div>
+                  <h2 class="form-step__title">Проверка пользовательских данных</h2>
+                </div>
+                <!-- Top step-6-->
+                <div class="form-step__top" data-step="6">
+                  <div class="form-step__icon">
+                    <svg class="icon icon-bank" width="12" height="12">
+                      <use href="#icon-bank"></use>
+                    </svg>
+                  </div>
+                  <h2 class="form-step__title">Выбор вашего банка</h2>
+                </div>
+                <!-- Top step-7-->
+                <div class="form-step__top" data-step="7">
+                  <div class="form-step__icon form-step__icon--green">
+                    <svg class="icon icon-checkmark" width="12" height="12">
+                      <use href="#icon-checkmark"></use>
+                    </svg>
+                  </div>
+                  <h2 class="form-step__title">Проверка прошла успешно</h2>
+                </div>
+                <!-- Top step-8-->
+                <div class="form-step__top" data-step="8">
+                  <div class="form-step__icon">
+                    <svg class="icon icon-search" width="12" height="12">
+                      <use href="#icon-search"></use>
+                    </svg>
+                  </div>
+                  <h2 class="form-step__title">Дополнительная проверка</h2>
+                </div>
+                <!-- Desc step-4--><span class="form-step__desc" data-step="4">Вы можете пропустить этот шаг</span>
+                <!-- Desc step-5--><span class="form-step__desc" data-step="5">Обычно это занимает меньше минуты, пожалуйста, не закрывайте страницу!</span>
+                <!-- Desc step-6--><span class="form-step__desc" data-step="6">Выберите банк на карту которого, вы хотите получить займ</span>
+                <!-- Desc step-7--><span class="form-step__desc" data-step="7">Остался один шаг!</span>
+                <!-- Desc step-8--><span class="form-step__desc" data-step="8">Обычно это занимает меньше минуты, пожалуйста, не закрывайте страницу!</span>
+                <!-- Badge step-4-->
+                <div class="form-step__badge" data-step="4">
+                  <button class="form-step__button" data-next><span>Пропустить этот шаг</span>
+                    <svg class="icon icon-arrow-right" width="18" height="18">
+                      <use href="#icon-arrow-right"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="form-step__content">
+                  <div class="form-step__header">
+                    <div class="form-step__header-left"><span class="form-step__text">Сумма и сроки займа:</span><strong class="form-step__text"> <strong>35 000 ₽ </strong>на <strong>7 дней</strong></strong></div>
+                    <div class="form-step__header-right"><strong class="form-step__text">Изменить</strong>
+                      <div class="form-step__header-icon">
+                        <svg class="icon icon-pencil-2" width="12" height="12">
+                          <use href="#icon-pencil-2"></use>
                         </svg>
-                        <svg class="icon icon-div-h" width="342" height="3">
-                          <use href="#icon-div-h"></use>
-                        </svg>
                       </div>
-                      <div class="benefits-tabs-card__item benefits-tabs-card-item">
-                        <div class="benefits-tabs-card-item__icon" data-item="2">
-                          <svg class="icon icon-search" width="28" height="28">
+                    </div>
+                  </div>
+                  <!-- Form step-1-->
+                  <form class="form-step__form form-step__form--active" data-step="1">
+                    <h3 class="form-step__subtitle">До получения денег: <strong>7 шагов</strong></h3>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Номер телефона *</legend>
+                      <label class="form-group__field form-field form-field--error">
+                        <input class="form-field__input" id="phone-1" placeholder="+7 (999) 123-32-21" required><span class="form-field__error">Неправильный номер</span>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">SMS код *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" id="sms-1" placeholder="1 2 3 4" required><span class="form-field__info">Отправить повторно, через <strong>15 </strong>сек.</span>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group form-group--double">
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" type="radio" name="confirmType" value="text" checked><span class="form-field__text">Текстовое сообщение (SMS)</span>
+                      </label>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" type="radio" name="confirmType" value="text"><span class="form-field__text">Голосовой вызов</span>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <button class="button button--accent-orange form-group__button" type="button">Подтвердить
+                      </button>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <button class="button button--accent-orange-reverse form-group__button" type="button">Получить код
+                      </button>
+                    </fieldset>
+                    <hr class="form-group__line">
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Почта</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Для документов">
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Фамилия *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Введите фамилию" required>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Имя *</legend>
+                      <label class="form-group__field form-field form-field--success">
+                        <input class="form-field__input" placeholder="Введите имя" required>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Отчество</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Введите отчество">
+                      </label>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" type="checkbox" value="text"><span class="form-field__text">Нет отчества</span>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group form-group--double">
+                      <legend class="form-group__title">Пол</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" type="checkbox" value="text"><span class="form-field__text">Мужской</span>
+                      </label>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" type="checkbox" value="text"><span class="form-field__text">Женский</span>
+                      </label>
+                    </fieldset>
+                    <hr class="form-group__line">
+                    <fieldset class="form-group">
+                      <label class="form-group__field form-field form-field--error">
+                        <input class="form-field__input" type="checkbox" value="text"><span class="form-field__text">Я ознакомлен и согласен со <strong> <a href="#">следующим</a></strong></span>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label class="form-group__field form-field form-field--error">
+                        <input class="form-field__input" type="checkbox" value="text"><span class="form-field__text">Согласен с условиями платной периодической подписки ценой <strong>999 </strong>рублей каждые <strong>7 </strong>дней в виде безакцептных рекуррентных платежей. Осознаю возмездный характер оказываемых услуг.</span>
+                      </label>
+                    </fieldset>
+                  </form>
+                  <!-- Form step-2-->
+                  <form class="form-step__form" data-step="2">
+                    <h3 class="form-step__subtitle">До получения денег: <strong>6 шагов</strong></h3>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Серия *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" id="series-2" placeholder="Серия" required>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Номер *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" id="number-2" placeholder="Номер" required>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Код подразделения *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" id="code-2" placeholder="Код подразделения" required>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Кем выдан *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Кем выдан" required>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Место рождения *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Место рождения" required>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">СНИЛС *<span class="form-group__badge">5%</span></legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" id="snils-2" placeholder="+ 5% на одобрение" required>
+                      </label>
+                    </fieldset>
+                  </form>
+                  <!-- Form step-3-->
+                  <form class="form-step__form" data-step="3">
+                    <h3 class="form-step__subtitle">До получения денег: <strong>5 шагов</strong></h3>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Регион *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Регион" required>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Город *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Город" required>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Улица *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Улица" required>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Дом *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Дом" required>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Квартира *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Квартира" required>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" type="checkbox" value="text"><span class="form-field__text">Совпадает с адресом проживания</span>
+                      </label>
+                    </fieldset>
+                    <hr class="form-group__line">
+                    <h3 class="form-step__subtitle">Адрес проживания</h3>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Регион *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Регион" required>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Город *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Город" required>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Улица *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Улица" required>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Дом *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Дом" required>
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Квартира *</legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Квартира" required>
+                      </label>
+                    </fieldset>
+                  </form>
+                  <!-- Form step-4-->
+                  <form class="form-step__form" data-step="4">
+                    <h3 class="form-step__subtitle">До получения денег: <strong>4 шага</strong></h3>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Образование<span class="form-group__badge">5%</span></legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Образование">
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Семейное положение<span class="form-group__badge">5%</span></legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Семейное положение">
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Наличие работы<span class="form-group__badge">5%</span></legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Наличие работы">
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Наличие открытых займов<span class="form-group__badge">5%</span></legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Наличие открытых займов">
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Месячный доход<span class="form-group__badge">5%</span></legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Месячный доход">
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Дополнительное контактное лицо<span class="form-group__badge">5%</span></legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Дополнительное контактное лицо">
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">ФИО<span class="form-group__badge">5%</span></legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Доп. конт.лица">
+                      </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <legend class="form-group__title">Телефон<span class="form-group__badge">5%</span></legend>
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" id="phone-2" placeholder="Доп. конт.лица">
+                      </label>
+                    </fieldset>
+                  </form>
+                  <!-- Form step-6-->
+                  <form class="form-step__form" data-step="6">
+                    <fieldset class="form-group">
+                      <label class="form-group__field form-field">
+                        <input class="form-field__input" placeholder="Название банка">
+                        <div class="form-field__icon">
+                          <svg class="icon icon-search" width="15" height="15">
                             <use href="#icon-search"></use>
                           </svg>
                         </div>
-                        <h3 class="benefits-tabs-card-item__title">Дожидаетесь анализа</h3><span class="benefits-tabs-card-item__text">Не дольше 5 минут</span>
-                      </div>
-                      <div class="benefits-tabs-card__div">
-                        <svg class="icon icon-div" width="3" height="48">
-                          <use href="#icon-div"></use>
-                        </svg>
-                        <svg class="icon icon-div-h" width="342" height="3">
-                          <use href="#icon-div-h"></use>
-                        </svg>
-                      </div>
-                      <div class="benefits-tabs-card__item benefits-tabs-card-item">
-                        <div class="benefits-tabs-card-item__icon" data-item="3">
-                          <svg class="icon icon-db" width="28" height="28">
-                            <use href="#icon-db"></use>
+                      </label>
+                    </fieldset>
+                    <div class="form-step__banks">
+                      <div class="step-bank" data-bank="sber">
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="img/sber-desktop.avif 1x, img/sber-desktop.avif 2x">
+                          <source media="(min-width: 1024px)" srcset="img/sber-desktop.webp 1x, img/sber-desktop.webp 2x">
+                          <source media="(min-width: 1024px)" srcset="img/sber-desktop.png 1x, img/sber-desktop.png 2x">
+                          <source media="(min-width: 768px)" srcset="img/sber-desktop.avif 1x, img/sber-desktop.avif 2x">
+                          <source media="(min-width: 768px)" srcset="img/sber-desktop.webp 1x, img/sber-desktop.webp 2x">
+                          <source media="(min-width: 768px)" srcset="img/sber-desktop.png 1x, img/sber-desktop.png 2x">
+                          <source type="image/avif" srcset="img/sber.avif 1x, img/sber.avif 2x">
+                          <source type="image/webp" srcset="img/sber.webp 1x, img/sber.webp 2x"><img class="step-bank__image" src="img/sber.png" srcset="img/sber.png 2x" width height alt loading="lazy">
+                        </picture>
+                        <div class="step-bank__title">Сбербанк</div>
+                        <div class="step-bank__icon">
+                          <svg class="icon icon-cross" width="10" height="10">
+                            <use href="#icon-cross"></use>
+                          </svg>
+                          <svg class="icon icon-checkmark" width="10" height="10">
+                            <use href="#icon-checkmark"></use>
                           </svg>
                         </div>
-                        <h3 class="benefits-tabs-card-item__title">Выбираете условия</h3><span class="benefits-tabs-card-item__text">Получаете деньги*</span>
+                      </div>
+                      <div class="step-bank step-bank--error" data-bank="t-bank">
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="img/t-bank-desktop.avif 1x, img/t-bank-desktop.avif 2x">
+                          <source media="(min-width: 1024px)" srcset="img/t-bank-desktop.webp 1x, img/t-bank-desktop.webp 2x">
+                          <source media="(min-width: 1024px)" srcset="img/t-bank-desktop.png 1x, img/t-bank-desktop.png 2x">
+                          <source media="(min-width: 768px)" srcset="img/t-bank-desktop.avif 1x, img/t-bank-desktop.avif 2x">
+                          <source media="(min-width: 768px)" srcset="img/t-bank-desktop.webp 1x, img/t-bank-desktop.webp 2x">
+                          <source media="(min-width: 768px)" srcset="img/t-bank-desktop.png 1x, img/t-bank-desktop.png 2x">
+                          <source type="image/avif" srcset="img/t-bank.avif 1x, img/t-bank.avif 2x">
+                          <source type="image/webp" srcset="img/t-bank.webp 1x, img/t-bank.webp 2x"><img class="step-bank__image" src="img/t-bank.png" srcset="img/t-bank.png 2x" width height alt loading="lazy">
+                        </picture>
+                        <div class="step-bank__title">Тинькофф Банк</div>
+                        <div class="step-bank__icon">
+                          <svg class="icon icon-cross" width="10" height="10">
+                            <use href="#icon-cross"></use>
+                          </svg>
+                          <svg class="icon icon-checkmark" width="10" height="10">
+                            <use href="#icon-checkmark"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="step-bank step-bank--success" data-bank="vtb">
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="img/vtb-desktop.avif 1x, img/vtb-desktop.avif 2x">
+                          <source media="(min-width: 1024px)" srcset="img/vtb-desktop.webp 1x, img/vtb-desktop.webp 2x">
+                          <source media="(min-width: 1024px)" srcset="img/vtb-desktop.png 1x, img/vtb-desktop.png 2x">
+                          <source media="(min-width: 768px)" srcset="img/vtb-desktop.avif 1x, img/vtb-desktop.avif 2x">
+                          <source media="(min-width: 768px)" srcset="img/vtb-desktop.webp 1x, img/vtb-desktop.webp 2x">
+                          <source media="(min-width: 768px)" srcset="img/vtb-desktop.png 1x, img/vtb-desktop.png 2x">
+                          <source type="image/avif" srcset="img/vtb.avif 1x, img/vtb.avif 2x">
+                          <source type="image/webp" srcset="img/vtb.webp 1x, img/vtb.webp 2x"><img class="step-bank__image" src="img/vtb.png" srcset="img/vtb.png 2x" width height alt loading="lazy">
+                        </picture>
+                        <div class="step-bank__title">Банк ВТБ</div>
+                        <div class="step-bank__icon">
+                          <svg class="icon icon-cross" width="10" height="10">
+                            <use href="#icon-cross"></use>
+                          </svg>
+                          <svg class="icon icon-checkmark" width="10" height="10">
+                            <use href="#icon-checkmark"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="step-bank" data-bank="alfa">
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="img/alfa-desktop.avif 1x, img/alfa-desktop.avif 2x">
+                          <source media="(min-width: 1024px)" srcset="img/alfa-desktop.webp 1x, img/alfa-desktop.webp 2x">
+                          <source media="(min-width: 1024px)" srcset="img/alfa-desktop.png 1x, img/alfa-desktop.png 2x">
+                          <source media="(min-width: 768px)" srcset="img/alfa-desktop.avif 1x, img/alfa-desktop.avif 2x">
+                          <source media="(min-width: 768px)" srcset="img/alfa-desktop.webp 1x, img/alfa-desktop.webp 2x">
+                          <source media="(min-width: 768px)" srcset="img/alfa-desktop.png 1x, img/alfa-desktop.png 2x">
+                          <source type="image/avif" srcset="img/alfa.avif 1x, img/alfa.avif 2x">
+                          <source type="image/webp" srcset="img/alfa.webp 1x, img/alfa.webp 2x"><img class="step-bank__image" src="img/alfa.png" srcset="img/alfa.png 2x" width height alt loading="lazy">
+                        </picture>
+                        <div class="step-bank__title">Альфа Банк</div>
+                        <div class="step-bank__icon">
+                          <svg class="icon icon-cross" width="10" height="10">
+                            <use href="#icon-cross"></use>
+                          </svg>
+                          <svg class="icon icon-checkmark" width="10" height="10">
+                            <use href="#icon-checkmark"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="step-bank" data-bank="raif">
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="img/raif-desktop.avif 1x, img/raif-desktop.avif 2x">
+                          <source media="(min-width: 1024px)" srcset="img/raif-desktop.webp 1x, img/raif-desktop.webp 2x">
+                          <source media="(min-width: 1024px)" srcset="img/raif-desktop.png 1x, img/raif-desktop.png 2x">
+                          <source media="(min-width: 768px)" srcset="img/raif-desktop.avif 1x, img/raif-desktop.avif 2x">
+                          <source media="(min-width: 768px)" srcset="img/raif-desktop.webp 1x, img/raif-desktop.webp 2x">
+                          <source media="(min-width: 768px)" srcset="img/raif-desktop.png 1x, img/raif-desktop.png 2x">
+                          <source type="image/avif" srcset="img/raif.avif 1x, img/raif.avif 2x">
+                          <source type="image/webp" srcset="img/raif.webp 1x, img/raif.webp 2x"><img class="step-bank__image" src="img/raif.png" srcset="img/raif.png 2x" width height alt loading="lazy">
+                        </picture>
+                        <div class="step-bank__title">Райффайзен Банк</div>
+                        <div class="step-bank__icon">
+                          <svg class="icon icon-cross" width="10" height="10">
+                            <use href="#icon-cross"></use>
+                          </svg>
+                          <svg class="icon icon-checkmark" width="10" height="10">
+                            <use href="#icon-checkmark"></use>
+                          </svg>
+                        </div>
                       </div>
                     </div>
-                    <div class="benefits-tabs-card__text">Приготовьте паспорт и освободите 10&nbsp;минут своего времени</div>
-                    <div class="benefits-tabs-card__button">
-                      <a class="button button--default" href="/wizard.html">Получить сейчас
-                      </a>
+                    <div class="form-step__warning">
+                      <div class="form-step__warning-icon">
+                        <svg class="icon icon-alert" width="18" height="18">
+                          <use href="#icon-alert"></use>
+                        </svg>
+                      </div>
+                      <p class="form-step__warning-text">К сожалению, с картами данного банка наш сервис временно не работает из-за технических проблем на стороне банка, пожалуйста выберите другой банк. Если у вас нет карты другого банка, можете посмотреть предложения наших партнеров, кликнув <a>сюда</a></p>
                     </div>
+                  </form>
+                  <!-- Form step-7-->
+                  <form class="form-step__form" data-step="7">
+                    <h3 class="form-step__subtitle">Идентификация клиента</h3><span class="form-step__desc form-step__desc--mini">Мы спишем с вашей карты (<strong>и вернем</strong>) небольшую сумму (<strong>1.17 руб.</strong>) для проверки ее подлинности. Это не обязывает вас брать займ, вы вправе отказаться от услуг в любое время!</span>
+                    <div class="form-step__card form-step-card">
+                      <fieldset class="form-group">
+                        <legend class="form-group__title">Номер карты</legend>
+                        <label class="form-group__field form-field">
+                          <input class="form-field__input" id="cardNumber">
+                          <div class="form-field__icon" style="width: 24px">
+                            <svg class="icon icon-mastercard" width="24" height="15">
+                              <use href="#icon-mastercard"></use>
+                            </svg>
+                          </div>
+                        </label>
+                      </fieldset>
+                      <div class="form-step-card__row">
+                        <fieldset class="form-group form-group--card">
+                          <legend class="form-group__title">Срок действия</legend>
+                          <label class="form-group__field form-field">
+                            <input class="form-field__input" id="cardMM">
+                          </label><span>/</span>
+                          <label class="form-group__field form-field">
+                            <input class="form-field__input" id="cardYY">
+                          </label>
+                        </fieldset>
+                        <fieldset class="form-group">
+                          <legend class="form-group__title">CVC</legend>
+                          <label class="form-group__field form-field">
+                            <input class="form-field__input" id="cardCVC">
+                            <div class="form-field__icon">
+                              <svg class="icon icon-question" width="15" height="15">
+                                <use href="#icon-question"></use>
+                              </svg>
+                            </div>
+                          </label>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <fieldset class="form-group">
+                      <button class="button button--default form-group__button" type="button" data-next>Подтвердить
+                      </button>
+                    </fieldset>
+                    <div class="form-step-card__accept"><span>Мы принимаем:</span>
+                      <div class="form-step-card__cards">
+                        <svg class="icon icon-visa-2" width="52" height="20">
+                          <use href="#icon-visa-2"></use>
+                        </svg>
+                        <svg class="icon icon-mastercard-2" width="52" height="20">
+                          <use href="#icon-mastercard-2"></use>
+                        </svg>
+                        <svg class="icon icon-mir-2" width="52" height="20">
+                          <use href="#icon-mir-2"></use>
+                        </svg>
+                        <svg class="icon icon-pci-2" width="52" height="20">
+                          <use href="#icon-pci-2"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <hr class="form-group__line"><span class="form-step__desc form-step__desc--mini">Применяемая технология передачи данных гарантирует безопасность по сделкам с банковскими картами путем использования протоколов Secure Sockets Layer (SSL). Соединение защищено 128-битным SSL шифрованием</span>
+                    <div class="form-step__time"><span class="form-step__time-title">Заявка действительна: </span>
+                      <div class="form-step__time-clock">
+                        <svg class="icon icon-clock-fill" width="16" height="16">
+                          <use href="#icon-clock-fill"></use>
+                        </svg><strong>59:59:59</strong>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="form-step__footer">
+                    <fieldset class="form-group">
+                      <button class="button button--default form-group__button" data-next>Продолжить
+                      </button>
+                    </fieldset>
                   </div>
                 </div>
-                <div class="benefits-tabs__card benefits-tabs-card" data-tab="2">
-                  <div class="benefits-tabs-card__wrapper">
-                    <div class="benefits-tabs-card__items">
-                      <div class="benefits-tabs-card__item benefits-tabs-card-item">
-                        <div class="benefits-tabs-card-item__icon" data-item="1">
-                          <svg class="icon icon-person" width="28" height="28">
-                            <use href="#icon-person"></use>
-                          </svg>
-                        </div>
-                        <h3 class="benefits-tabs-card-item__title">В личных кабинетах</h3><span class="benefits-tabs-card-item__text">Картами VISA, MasterCard, Мир</span>
-                      </div>
-                      <div class="benefits-tabs-card__div">
-                        <svg class="icon icon-div" width="3" height="48">
-                          <use href="#icon-div"></use>
-                        </svg>
-                        <svg class="icon icon-div-h" width="342" height="3">
-                          <use href="#icon-div-h"></use>
-                        </svg>
-                      </div>
-                      <div class="benefits-tabs-card__item benefits-tabs-card-item">
-                        <div class="benefits-tabs-card-item__icon" data-item="2">
-                          <svg class="icon icon-card" width="28" height="28">
-                            <use href="#icon-card"></use>
-                          </svg>
-                        </div>
-                        <h3 class="benefits-tabs-card-item__title">Банковский перевод</h3><span class="benefits-tabs-card-item__text">Из любого удобного банка</span>
-                      </div>
-                      <div class="benefits-tabs-card__div">
-                        <svg class="icon icon-div" width="3" height="48">
-                          <use href="#icon-div"></use>
-                        </svg>
-                        <svg class="icon icon-div-h" width="342" height="3">
-                          <use href="#icon-div-h"></use>
-                        </svg>
-                      </div>
-                      <div class="benefits-tabs-card__item benefits-tabs-card-item">
-                        <div class="benefits-tabs-card-item__icon" data-item="3">
-                          <svg class="icon icon-pin" width="28" height="28">
-                            <use href="#icon-pin"></use>
-                          </svg>
-                        </div>
-                        <h3 class="benefits-tabs-card-item__title">В пунктах обслуживания</h3><span class="benefits-tabs-card-item__text">Оплачивая через терминалы</span>
-                      </div>
-                    </div>
-                    <div class="benefits-tabs-card__text">Вы можете вернуть деньги любым удобным способом: от банковского перевода до оплаты картой.</div>
-                    <div class="benefits-tabs-card__button">
-                      <a class="button button--default" href="/wizard.html">Получить сейчас
-                      </a>
-                    </div>
-                  </div><span class="benefits-tabs-card__desc">Условия возврата могут отличаться в зависимости от выбранной вами микрофинансовой компании</span>
-                </div>
-              </div>
-            </div>
-            <div class="benefits__slider benefits-slider">
-              <div class="benefits-slider__item">
-                <h3 class="benefits-slider__title">Не беспокоим близких</h3><span class="benefits-slider__desc">Не звоним родственникам и коллегам</span>
-              </div>
-              <div class="benefits-slider__item">
-                <h3 class="benefits-slider__title">Работаем 24/7</h3><span class="benefits-slider__desc">Работаем круглые сутки и без выходных. В дождь и снег</span>
-              </div>
-              <div class="benefits-slider__item">
-                <h3 class="benefits-slider__title">Можете нам доверять</h3><span class="benefits-slider__desc">Мы ничего не передаем без вашего ведома</span>
-              </div>
-              <div class="benefits-slider__item">
-                <h3 class="benefits-slider__title">Удобное погашение</h3><span class="benefits-slider__desc">С нами вы гасите займ без комиссии</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section requirements">
-        <div class="container container--sm">
-          <div class="requirements__wrapper">
-            <div class="requirements__info">
-              <h2 class="requirements__title">Что нужно для быстрого&nbsp;займа?</h2><span class="requirements__desc">Требования к потенциальному заемщику</span>
-              <picture>
-                <source media="(min-width: 1024px)" srcset="img/pig-desktop.avif 1x, img/pig-desktop.avif 2x">
-                <source media="(min-width: 1024px)" srcset="img/pig-desktop.webp 1x, img/pig-desktop.webp 2x">
-                <source media="(min-width: 1024px)" srcset="img/pig-desktop.png 1x, img/pig-desktop.png 2x">
-                <source media="(min-width: 768px)" srcset="img/pig-desktop.avif 1x, img/pig-desktop.avif 2x">
-                <source media="(min-width: 768px)" srcset="img/pig-desktop.webp 1x, img/pig-desktop.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/pig-desktop.png 1x, img/pig-desktop.png 2x">
-                <source type="image/avif" srcset="img/pig.avif 1x, img/pig.avif 2x">
-                <source type="image/webp" srcset="img/pig.webp 1x, img/pig.webp 2x"><img class="requirements__image" src="img/pig.png" srcset="img/pig.png 2x" width height alt loading="lazy">
-              </picture>
-            </div>
-            <div class="requirements__items">
-              <div class="requirements__item requirements-item">
-                <div class="requirements-item__row">
-                  <div class="requirements-item__col">
-                    <div class="requirements-item__icon">
-                      <svg class="icon icon-passport" width="18" height="18">
-                        <use href="#icon-passport"></use>
-                      </svg>
-                    </div>
-                    <div class="requirements-item__icon requirements-item__icon--sm">
-                      <svg class="icon icon-div-sm" width="3" height="18">
-                        <use href="#icon-div-sm"></use>
-                      </svg>
-                    </div>
-                    <div class="requirements-item__icon requirements-item__icon--lg">
-                      <svg class="icon icon-div-lg" width="3" height="62">
-                        <use href="#icon-div-lg"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="requirements-item__col">
-                    <h3 class="requirements-item__title">Паспорт РФ</h3><span class="requirements-item__desc">Jorem ipsum dolor sit amet, consectetur </span>
-                    <div class="requirements-item__spacer"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="requirements__item requirements-item">
-                <div class="requirements-item__row">
-                  <div class="requirements-item__col">
-                    <div class="requirements-item__icon">
-                      <svg class="icon icon-card" width="18" height="18">
+                <!-- Form step-5-->
+                <div class="form-step__check form-step-check" data-step="5">
+                  <div class="form-step-check__items">
+                    <div class="form-step-check__item">
+                      <svg class="icon icon-card" width="28" height="28">
                         <use href="#icon-card"></use>
                       </svg>
                     </div>
-                    <div class="requirements-item__icon requirements-item__icon--sm">
-                      <svg class="icon icon-div-sm" width="3" height="18">
-                        <use href="#icon-div-sm"></use>
+                    <div class="form-step-check__div">
+                      <svg class="icon icon-wizard-div-sm" width="65" height="3">
+                        <use href="#icon-wizard-div-sm"></use>
+                      </svg>
+                      <svg class="icon icon-wizard-div" width="276" height="3">
+                        <use href="#icon-wizard-div"></use>
                       </svg>
                     </div>
-                    <div class="requirements-item__icon requirements-item__icon--lg">
-                      <svg class="icon icon-div-lg" width="3" height="62">
-                        <use href="#icon-div-lg"></use>
+                    <div class="form-step-check__item">
+                      <svg class="icon icon-pen-to-square" width="28" height="28">
+                        <use href="#icon-pen-to-square"></use>
                       </svg>
                     </div>
-                  </div>
-                  <div class="requirements-item__col">
-                    <h3 class="requirements-item__title">Банковская карта</h3><span class="requirements-item__desc">Jorem ipsum dolor sit amet, consectetur</span>
-                    <div class="requirements-item__spacer"></div>
+                    <div class="form-step-check__div">
+                      <svg class="icon icon-wizard-div-sm" width="65" height="3">
+                        <use href="#icon-wizard-div-sm"></use>
+                      </svg>
+                      <svg class="icon icon-wizard-div" width="276" height="3">
+                        <use href="#icon-wizard-div"></use>
+                      </svg>
+                    </div>
+                    <div class="form-step-check__item">
+                      <svg class="icon icon-passport" width="28" height="28">
+                        <use href="#icon-passport"></use>
+                      </svg>
+                    </div>
+                  </div><span class="form-step-check__text">Проверка регистрационных данных</span>
+                  <div class="form-step-check__loader"><span class="form-step-check__percent">0%</span>
+                    <div class="form-step-check__line">
+                      <div class="form-step-check__line-filler"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="requirements__item requirements-item">
-                <div class="requirements-item__row">
-                  <div class="requirements-item__col">
-                    <div class="requirements-item__icon">
-                      <svg class="icon icon-card-fill" width="18" height="18">
-                        <use href="#icon-card-fill"></use>
+                <!-- Form step-8-->
+                <div class="form-step__check form-step-check" data-step="8">
+                  <div class="form-step-check__items">
+                    <div class="form-step-check__item">
+                      <svg class="icon icon-form-fill" width="28" height="28">
+                        <use href="#icon-form-fill"></use>
                       </svg>
                     </div>
-                    <div class="requirements-item__icon requirements-item__icon--sm">
-                      <svg class="icon icon-div-sm" width="3" height="18">
-                        <use href="#icon-div-sm"></use>
+                    <div class="form-step-check__div">
+                      <svg class="icon icon-wizard-div-sm" width="65" height="3">
+                        <use href="#icon-wizard-div-sm"></use>
+                      </svg>
+                      <svg class="icon icon-wizard-div" width="276" height="3">
+                        <use href="#icon-wizard-div"></use>
                       </svg>
                     </div>
-                    <div class="requirements-item__icon requirements-item__icon--lg">
-                      <svg class="icon icon-div-lg" width="3" height="62">
-                        <use href="#icon-div-lg"></use>
+                    <div class="form-step-check__item">
+                      <svg class="icon icon-handshake" width="28" height="28">
+                        <use href="#icon-handshake"></use>
                       </svg>
                     </div>
-                  </div>
-                  <div class="requirements-item__col">
-                    <h3 class="requirements-item__title">СНИЛС (опционально)</h3><span class="requirements-item__desc">Jorem ipsum dolor sit amet, consectetur </span>
-                    <div class="requirements-item__spacer"></div>
+                    <div class="form-step-check__div">
+                      <svg class="icon icon-wizard-div-sm" width="65" height="3">
+                        <use href="#icon-wizard-div-sm"></use>
+                      </svg>
+                      <svg class="icon icon-wizard-div" width="276" height="3">
+                        <use href="#icon-wizard-div"></use>
+                      </svg>
+                    </div>
+                    <div class="form-step-check__item">
+                      <svg class="icon icon-hourglass" width="28" height="28">
+                        <use href="#icon-hourglass"></use>
+                      </svg>
+                    </div>
+                  </div><span class="form-step-check__text">Опрашиваем партнеров</span>
+                  <div class="form-step-check__loader"><span class="form-step-check__percent">0%</span>
+                    <div class="form-step-check__line">
+                      <div class="form-step-check__line-filler"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="requirements__item requirements-item">
-                <div class="requirements-item__row">
-                  <div class="requirements-item__col">
-                    <div class="requirements-item__icon">
-                      <svg class="icon icon-wifi" width="18" height="18">
-                        <use href="#icon-wifi"></use>
-                      </svg>
-                    </div>
-                    <div class="requirements-item__icon requirements-item__icon--sm">
-                      <svg class="icon icon-div-sm" width="3" height="18">
-                        <use href="#icon-div-sm"></use>
-                      </svg>
-                    </div>
-                    <div class="requirements-item__icon requirements-item__icon--lg">
-                      <svg class="icon icon-div-lg" width="3" height="62">
-                        <use href="#icon-div-lg"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="requirements-item__col">
-                    <h3 class="requirements-item__title">Доступ в интернет</h3><span class="requirements-item__desc">Jorem ipsum dolor sit amet, consectetur </span>
-                    <div class="requirements-item__spacer"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="requirements__item requirements-item">
-                <div class="requirements-item__row">
-                  <div class="requirements-item__col">
-                    <div class="requirements-item__icon">
-                      <svg class="icon icon-18-up" width="18" height="18">
-                        <use href="#icon-18-up"></use>
-                      </svg>
-                    </div>
-                    <div class="requirements-item__icon requirements-item__icon--sm">
-                      <svg class="icon icon-div-sm" width="3" height="18">
-                        <use href="#icon-div-sm"></use>
-                      </svg>
-                    </div>
-                    <div class="requirements-item__icon requirements-item__icon--lg">
-                      <svg class="icon icon-div-lg" width="3" height="62">
-                        <use href="#icon-div-lg"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="requirements-item__col">
-                    <h3 class="requirements-item__title">Возраст от 18 лет</h3><span class="requirements-item__desc">Jorem ipsum dolor sit amet, consectetur </span>
-                    <div class="requirements-item__spacer"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="requirements__item requirements-item">
-                <div class="requirements-item__row">
-                  <div class="requirements-item__col">
-                    <div class="requirements-item__icon">
-                      <svg class="icon icon-phone" width="18" height="18">
-                        <use href="#icon-phone"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="requirements-item__col">
-                    <h3 class="requirements-item__title">Мобильный телефон</h3><span class="requirements-item__desc">Jorem ipsum dolor sit amet, consectetur </span>
-                  </div>
-                </div>
+                <div class="form-step__bottom"><span>Деньги могут быть у вас уже в 01:39.*</span></div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="section docs">
-        <div class="container container--sm">
-          <div class="docs__wrapper">
-            <div class="docs__info">
-              <div class="docs__top">
-                <div class="docs__icon">
-                  <svg class="icon icon-rkn" width="38" height="38">
-                    <use href="#icon-rkn"></use>
-                  </svg>
-                </div>
-                <h2 class="docs__title">Номер свидетельства №1227400043749 от 08.11.2022</h2>
-              </div><span class="docs__text"><strong><a href="/">Woffle.ru </a></strong>зарегистрирован в реестре РКН, как оператор персональных данных </span><span class="docs__text">Регистрационный. номер: <br><strong>78-21-008269</strong></span>
-            </div>
-            <div class="docs__contacts docs-contacts">
-              <hr class="docs-contacts__line">
-              <div class="docs-contacts__items">
-                <div class="docs-contacts__row">
-                  <div class="docs-contacts__col">
-                    <div class="docs-contacts__icon">
-                      <svg class="icon icon-phone-fill" width="8" height="8">
-                        <use href="#icon-phone-fill"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="docs-contacts__col"><span class="docs-contacts__desc">Интернет-приёмная Банка России:</span><a class="docs-contacts__link" href="https://www.cbr.ru/reception">https://www.cbr.ru/reception</a></div>
-                </div>
-                <div class="docs-contacts__row">
-                  <div class="docs-contacts__col">
-                    <div class="docs-contacts__icon">
-                      <svg class="icon icon-coin" width="8" height="8">
-                        <use href="#icon-coin"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="docs-contacts__col"><span class="docs-contacts__desc">Реестр МФО на сайте Банка России: </span><a class="docs-contacts__link" href="https://cbr.ru/microfinance/registry">https://cbr.ru/microfinance/registry</a></div>
-                </div>
-                <div class="docs-contacts__row">
-                  <div class="docs-contacts__col">
-                    <div class="docs-contacts__icon">
-                      <svg class="icon icon-bank" width="8" height="8">
-                        <use href="#icon-bank"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="docs-contacts__col"><span class="docs-contacts__desc">Банк России:</span><a class="docs-contacts__link" href="https://cbr.ru">https://cbr.ru</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section ways">
-        <div class="container container--sm">
-          <div class="ways__wrapper">
-            <h2 class="ways__title">Способы получения</h2><span class="ways__desc">Мгновенно. Круглосуточно. На&nbsp;любой&nbsp;счет.</span>
-            <div class="ways__cards">
-              <div class="ways__card">
-                <svg class="icon icon-mastercard" width="80" height="34">
-                  <use href="#icon-mastercard"></use>
-                </svg>
-              </div>
-              <div class="ways__card">
-                <svg class="icon icon-visa" width="80" height="34">
-                  <use href="#icon-visa"></use>
-                </svg>
-              </div>
-              <div class="ways__card">
-                <svg class="icon icon-mir" width="80" height="34">
-                  <use href="#icon-mir"></use>
-                </svg>
-              </div>
-            </div>
-            <a class="button button--default ways__button" href="/wizard.html">Оформить заявку
-            </a>
           </div>
         </div>
       </section>
